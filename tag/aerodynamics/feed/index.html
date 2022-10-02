@@ -1,0 +1,624 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>aerodynamics Archives - M4 Engineering</title>
+	<atom:link href="https://www.m4-engineering.com/tag/aerodynamics/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.m4-engineering.com/tag/aerodynamics/</link>
+	<description>Engineering</description>
+	<lastBuildDate>Thu, 10 Dec 2020 19:27:37 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
+
+<image>
+	<url>https://www.m4-engineering.com/wp-content/uploads/2021/01/cropped-logo1_png_2020-32x32.png</url>
+	<title>aerodynamics Archives - M4 Engineering</title>
+	<link>https://www.m4-engineering.com/tag/aerodynamics/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Flutter Analysis with pyNastran</title>
+		<link>https://www.m4-engineering.com/flutter-analysis-with-pynastran/</link>
+		
+		<dc:creator><![CDATA[Steve Doyle]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2020 20:51:00 +0000</pubDate>
+				<category><![CDATA[Technical Blog]]></category>
+		<category><![CDATA[aerodynamics]]></category>
+		<category><![CDATA[Flutter]]></category>
+		<category><![CDATA[Nastran]]></category>
+		<category><![CDATA[pyNastran]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=2861</guid>
+
+					<description><![CDATA[<p>pyNastran enables analysts using Nastran to efficiently create, manipulate, and extract data from models.&#160; It handles the underlying details so you get models that will run smoothly, without worrying about field formatting in the process. Challenges: Ensuring correct field formatting Inefficiencies in model creation Organizing and analyzing large result files Values: Quick verification of correct [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/flutter-analysis-with-pynastran/">Flutter Analysis with pyNastran</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="2861" class="elementor elementor-2861">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-c7172da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="c7172da" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-36613ff7" data-id="36613ff7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-40c2db55 elementor-widget elementor-widget-text-editor" data-id="40c2db55" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p> pyNastran enables analysts using Nastran to efficiently create, manipulate, and extract data from models.  It handles the underlying details so you get models that will run smoothly, without worrying about field formatting in the process.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Challenges:                                   </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Ensuring correct field formatting</li>
+<li>Inefficiencies in model creation</li>
+<li>Organizing and analyzing large result files</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>Values:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>Quick verification of correct geometry</li>
+<li>Easy accessibility of data</li>
+<li>Effortless conversions to desired units</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading {"level":1} --></p>
+<h1>An Overview of pyNastran</h1>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>pyNastran is an open source Python interface library to the various Nastran file formats (BDF, OP2, OP4) that has had continuous development since 2011. Using the BDF interface, you can read, edit, and write Nastran geometry without worrying about field formatting. pyNastran also performs multiple checks to ensure your model is correct. Using the OP2 interface, you can read large result files quickly and efficiently. Additionally, you can extract a subset of the result data and write OP2 and F06 result files.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Rather than replacing FEMAP, Simcenter3D, or PATRAN, the goal of pyNastran is to make engineers more efficient and avoid some of the common pitfalls with model creation and manipulation, as well as make it easy to extract results and put them into external programs. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2820,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-1-1024x530.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>In this post, pyNastran will be used to demonstrate preliminary flutter analysis of an aircraft:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li>F06 Flutter plotting</li>
+<li>The pyNastran GUI</li>
+<li>Creating Animations</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:heading --></p>
+<h2><a style="font-size: 20px;font-weight: 600;background-color: #ffffff">General Aviation Aircraft Example              </a></h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>This example is a notional two-passenger general aviation aircraft with an all-composite structure.  The fuselage, wing, and tails were optimized with the propeller/motor, batteries, and passengers all modeled as non-structural (concentrated) masses.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2821,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-3.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading --></p>
+<h2> Step 1: Loading Geometry</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Once the pyNastran GUI executable has been opened, the geometry can be loaded using the <strong>File -&gt; Load Geometry…</strong> option.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2822,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-4.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph {"align":"left"} --></p>
+<p>Using the <strong>View -&gt;</strong> <strong>Edit Geometry Properties</strong> window, the opacity of the <em>main</em> model may also be increased to better see the internal structure.</p>
+<p> </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2823,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-5-1024x711.jpg" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p> </p>
+<p>Zooming in and taking a look at the mesh with the edges (<strong>w</strong> for wireframe and <strong>e</strong> for edges or by using the <img loading="lazy" src="https://www.m4-engineering.com/wp-content/uploads/2020/04/image.png" alt="" width="16" height="16" /> and <img loading="lazy" style="font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;font-size: 14px;font-style: normal;font-weight: 400" src="https://www.m4-engineering.com/wp-content/uploads/2020/04/tedges.png" alt="" width="16" height="16" /> icons, respectively) shows a quad dominated mesh.  This is important as quads are more accurate so fewer elements can be used.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2826,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-6-1024x764.jpg" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Using the <strong>View -&gt; Edit Geometry Properties</strong> menu, we can also look at the <strong>material coordinate systems (MCID)</strong> for each layer (Layer 1-<strong><span style="color: red">red</span></strong>, Layer 2-<strong><span style="color: blue">blue</span></strong>, Layer 3-<strong><span style="color: black">black</span></strong>) in order to verify that it’s modeled as intended.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:gallery {"ids":[2827,2828]} --></p>
+<figure>
+<ul>
+<li>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-7.1.png" alt="" data-id="2827" data-link="https://www.m4-engineering.com/?attachment_id=2827" /></figure>
+</li>
+<li>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-7.png" alt="" data-id="2828" data-link="https://www.m4-engineering.com/?attachment_id=2828" data-full-url="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-7.png" /></figure>
+</li>
+</ul>
+</figure>
+<p><!-- /wp:gallery --></p>
+<p><!-- wp:heading --></p>
+<h2>Step 2: View Flutter Results</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Working with aerodynamics often involves different unit systems.  With English units, aerodynamic models require the use of PARAM,WTMASS to handle the conversion of weight to mass. However, PARAM,WTMASS does not convert air density units. To address this, the pyNastran F06 plotter handles the conversion for you. The unit system for the Electric GA model is presented below.</p>
+<p> </p>
+<table>
+<tbody>
+<tr>
+<th><strong>Type</strong></th>
+<th><strong>Desired Units</strong></th>
+</tr>
+<tr>
+<td>PARAM, WTMASS</td>
+<td>1/g = 1/(12*32.2) = 0.002588</td>
+</tr>
+<tr>
+<td>Length</td>
+<td>inches</td>
+</tr>
+<tr>
+<td>Time</td>
+<td>seconds</td>
+</tr>
+<tr>
+<td>Input Velocity</td>
+<td>inches/second</td>
+</tr>
+<tr>
+<td>Weight</td>
+<td>pounds</td>
+</tr>
+<tr>
+<td>Mass</td>
+<td>slinch</td>
+</tr>
+<tr>
+<td>Structural Density</td>
+<td>pounds/inch<sup>3</sup></td>
+</tr>
+<tr>
+<td>Air Density</td>
+<td>slinch/inch<sup>3</sup></td>
+</tr>
+<tr>
+<td>Output Velocity</td>
+<td>knots</td>
+</tr>
+</tbody>
+</table>
+<p> </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The flutter plotter supports a series of unit systems including:</p>
+<p><!-- /wp:paragraph --></p>
+<table>
+<tbody>
+<tr>
+<th><strong>Unit System</strong></th>
+<th><strong>Input/Output Velocity</strong></th>
+</tr>
+<tr>
+<td>english_in</td>
+<td>in/sec</td>
+</tr>
+<tr>
+<td>english_ft</td>
+<td>ft/sec</td>
+</tr>
+<tr>
+<td>english_kt</td>
+<td>knots</td>
+</tr>
+<tr>
+<td>SI</td>
+<td>m/sec</td>
+</tr>
+</tbody>
+</table>
+<p><!-- wp:paragraph --></p>
+<p>The F06 output file has velocity in units of inches/second, while it’s desired to have the velocity plotted in knots (or possibly SI).  Additionally, rather than true airspeed, the equivalent airspeed will be used.  Equivalent airspeed normalizes the velocity to sea level to reduce the amount of analysis required using:</p>
+<p><!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex?V_{EAS} = V_{TAS} \sqrt{\frac{\rho}{\rho_0}}" border="0" /> <!-- wp:paragraph --></p>
+<p>Create the flutter plots by typing the following on the command line:</p>
+<p><!-- /wp:paragraph --> <span style="font-family: Courier New"> f06 plot_145 general_aviation_flutter.f06 &#8211;nopoints &#8211;eas &#8211;in_units english_in &#8211;out_units english_kt &#8211;modes 1:15 &#8211;rootlocus </span> <!-- wp:paragraph --></p>
+<p>Where:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:list --></p>
+<ul>
+<li><strong>eas</strong> flags switches from true airspeed to equivalent airspeed</li>
+<li><strong>modes</strong> 1:15 includes mode 1 to mode 15 to reduce clutter on the plot</li>
+<li><strong>rootlocus</strong> adds a root locus plot of the eigenvalues</li>
+</ul>
+<p><!-- /wp:list --></p>
+<p><!-- wp:paragraph --></p>
+<p>The Velocity vs. Damping (V-g) and Velocity vs. Frequency (V-f) curves are shown below.  A negative damping corresponds to a stable mode, while a positive damping corresponds to an unstable mode.  Another way to think about it is by asking the question: ‘How much damping is required to make the aircraft mode stable?’  While a bit difficult to see, Mode 15 is the critical flutter mode and crosses from negative to positive damping at 290 knots.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2833,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-12.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Instability can sometimes be better seen using the root locus, which occurs when there is a root in the right half plane.  Here, the points grow in size as velocity increases.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2834,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-13.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Zooming in on the plot can be accomplished by using the dynamic zooming buttons, so we can zoom in on Mode 15 to make its behavior more obvious. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":2835,"sizeSlug":"large"} --></p>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-14.png" alt="" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Here we see a slight hump mode instability (at imaginary eigenvalue of 188.9; roughly 125 knots), but it’s not a concern as structural damping will address this.  There is a more severe instability developing as the speed (and point size) gets larger.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2>Step 3: Animating Flutter Mode Shapes</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>We can load the flutter result by selecting <strong>File -&gt; Load Results&#8230;</strong> and selecting the result case from the sidebar.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"align":"center","id":2836,"sizeSlug":"large"} --></p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-15-1024x530.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Opening the <strong>View -&gt; Create Animation… </strong>menu brings up the following menu.  As this is a complex result, it’s best to set the <strong>Animation Type</strong> to <strong>Phase</strong> and click <strong>Run</strong> the animation.  Update the <strong>scale</strong>, <strong>total time</strong>, <strong>frames/second</strong> as necessary to generate a smooth result.</p>
+<div>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-16.png" alt="" /></figure>
+</div>
+<p><!-- /wp:image --></p>
+<p><!-- wp:paragraph --></p>
+<p>Once you are satisfied, unclick the <strong>Animate in GUI</strong> button and click <strong>Run</strong> to create an animation.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:image {"id":2840,"sizeSlug":"large"} --></p>
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/electric_ga_flutter_mode_shape_eigenvectors.gif" alt="" /></figure>
+<p><!-- /wp:image --></p>
+<p><!-- wp:heading {"level":1} --></p>
+<h1>Conclusion</h1>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>This post has provided a basic overview of the pyNastran GUI.  The F06 flutter plotter has been shown with an emphasis on a preliminary flutter analysis of a notional general aviation aircraft.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:heading --></p>
+<h2>How to Obtain pyNastran</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>The GUI is available for download at: <a href="https://sourceforge.net/projects/pynastran/files/?source=navbar">https://sourceforge.net/projects/pynastran/files/?source=navbar</a></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The source code can be found at: <a href="https://github.com/SteveDoyle2/pyNastran">https://github.com/SteveDoyle2/pyNastran</a>.</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Or installed by running:</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>&gt;&gt;&gt; pip install pyNastran</p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>The documentation can be found at: <a href="https://pynastran-git.readthedocs.io/en/1.3/quick_start/index.html">https://pynastran-git.readthedocs.io/en/1.3/quick_start/index.html</a>. </p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:paragraph --></p>
+<p>Note: pyNastran is an open source project; bug reports, feature requests and help with development is appreciated and encouraged <img src="https://s.w.org/images/core/emoji/14.0.0/72x72/1f60a.png" alt="😊" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+<p><!-- /wp:paragraph --></p>
+<p><!-- wp:media-text {"mediaId":2838,"mediaType":"image","mediaWidth":25} --></p>
+<div style="grid-template-columns: 25% auto">
+<figure><img src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-18.jpg" alt="" /></figure>
+<div>
+<p><!-- wp:heading --></p>
+<h2>Written by Steve Doyle</h2>
+<p><!-- /wp:heading --></p>
+<p><!-- wp:paragraph --></p>
+<p>Steve Doyle is a Senior Aerospace Engineer with a background in structural analysis, CFD, and programming.  He’s also the author of pyNastran.  Outside of dorky projects, he likes to hike and rock climb!</p>
+<p><!-- /wp:paragraph --></p>
+</div>
+</div>
+<p><!-- /wp:media-text --></p>
+<p><!-- wp:paragraph --></p>
+<p><!-- /wp:paragraph --></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/flutter-analysis-with-pynastran/">Flutter Analysis with pyNastran</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Developing the Aerodynamics Module for the Integrated Multidisciplinary Optimization Object System (2011)</title>
+		<link>https://www.m4-engineering.com/developing-the-aerodynamics-module-for-the-integrated-multidisciplinary-optimization-object-system-2011/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Tue, 26 Apr 2011 13:07:26 +0000</pubDate>
+				<category><![CDATA[Publications]]></category>
+		<category><![CDATA[aerodynamics]]></category>
+		<category><![CDATA[multidisciplinary optimization]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=4333</guid>
+
+					<description><![CDATA[<p>Authors Steven Doyle, Katherine Alston, and Tyler Winter Introduction The Integrated Multidisciplinary Optimization Objects (IMOO) System delivers physics-based multidisciplinary analysis and optimization (MDAO) capabilities that are required to develop next generation subsonic, supersonic, and hypersonic aircraft. The software tools and approaches accurately model prediction of vehicle performance, interdisciplinary couplings, and system-level evaluation of the benefits [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/developing-the-aerodynamics-module-for-the-integrated-multidisciplinary-optimization-object-system-2011/">Developing the Aerodynamics Module for the Integrated Multidisciplinary Optimization Object System (2011)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="4333" class="elementor elementor-4333">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-36396fcf elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="36396fcf" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-604f4af7" data-id="604f4af7" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6663f4b0 elementor-widget elementor-widget-heading" data-id="6663f4b0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Authors</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-741529ee elementor-widget elementor-widget-text-editor" data-id="741529ee" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Steven Doyle, Katherine Alston, and Tyler Winter</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-4fa440ef elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4fa440ef" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-59c3e39" data-id="59c3e39" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1965b60b elementor-widget elementor-widget-heading" data-id="1965b60b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Introduction</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-10ffd204 elementor-widget elementor-widget-text-editor" data-id="10ffd204" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The Integrated Multidisciplinary Optimization Objects (IMOO) System delivers physics-based multidisciplinary analysis and optimization (MDAO) capabilities that are required to develop next generation subsonic, supersonic, and hypersonic aircraft. The software tools and approaches accurately model prediction of vehicle performance, interdisciplinary couplings, and system-level evaluation of the benefits and risks. M4 Engineering (experts in high fidelity MDAO processes) is working with NASA Glenn (who is currently developing a Python-based MDAO framework called OpenMDAO) to combine their specialties to deliver a modular design environment suitable to the high fidelity analysis and design of coupled systems. The key elements of this toolset include an object-oriented integration framework, common objects, and analysis modules that based on custom data types. The IMOO system utilizes Geometry Manipulation by Automatic Parameterization (GMAP) and RapidFEM for advanced parametric geometry and grid generation technology for aerodynamic and structural models. Both GMAP and RapidFEM are in-house applications developed by M4 Engineering. M4 Engineering is developing the IMOO System using multiple, incremental builds each with their own unique<br>example problem. The Aerodynamics Module is the software component in IMOO that enables calculation of the aerodynamic performance of an arbitrary vehicle design, as well as pressure loads on the vehicle surface. It uses a unique blending of the results between Low Fidelity and High Fidelity results to generate an accurate Mid Fidelity Aerodynamic Database quickly.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-7ab48dbb elementor-widget elementor-widget-text-editor" data-id="7ab48dbb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h1><span style="text-decoration: underline;"><a href="https://www.m4-engineering.com/wp-content/uploads/2020/10/Aerodynamics-Module-AIAA-49th-Aerospace-Sciences-Meeting-2011.pdf">View Publication</a></span></h1>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/developing-the-aerodynamics-module-for-the-integrated-multidisciplinary-optimization-object-system-2011/">Developing the Aerodynamics Module for the Integrated Multidisciplinary Optimization Object System (2011)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Efficient Creation of Aeroservoelastic Models Using Interpolated Aerodynamics Models (2011)</title>
+		<link>https://www.m4-engineering.com/efficient-creation-of-aeroservoelastic-models-using-interpolated-aerodynamics-models-2011/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Mon, 25 Apr 2011 13:45:35 +0000</pubDate>
+				<category><![CDATA[Conference Publications]]></category>
+		<category><![CDATA[aerodynamics]]></category>
+		<category><![CDATA[aeroservoelastic]]></category>
+		<category><![CDATA[interpolated]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=4352</guid>
+
+					<description><![CDATA[<p>Authors Daniel Hammerand, James Gariffo, Kevin Roughen Introduction The expense of running computational fluid dynamics (CFD) and computational structural dynamics (CSD) codes motivates the creation of aeroservoelastic models which can be interpolated accurately to unmodeled flight conditions. Furthermore, both the analyzed and interpolated points can be used to design modern control laws for flutter suppression, [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/efficient-creation-of-aeroservoelastic-models-using-interpolated-aerodynamics-models-2011/">Efficient Creation of Aeroservoelastic Models Using Interpolated Aerodynamics Models (2011)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="4352" class="elementor elementor-4352">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-d56de12 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d56de12" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-7466f98b" data-id="7466f98b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-17b71f7a elementor-widget elementor-widget-heading" data-id="17b71f7a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Authors</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5d000421 elementor-widget elementor-widget-text-editor" data-id="5d000421" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Daniel Hammerand, James Gariffo, Kevin Roughen</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-1f2b0537 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1f2b0537" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3108b230" data-id="3108b230" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-404351b2 elementor-widget elementor-widget-heading" data-id="404351b2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Introduction</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-115983a9 elementor-widget elementor-widget-text-editor" data-id="115983a9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The expense of running computational fluid dynamics (CFD) and computational structural dynamics (CSD) codes motivates the creation of aeroservoelastic models which can be interpolated accurately to unmodeled flight conditions. Furthermore, both the analyzed and interpolated points can be used to design modern control laws for flutter suppression, gust load alleviation, and ride quality enhancement. One interpolation method involves taking the weighted average of the assembled aeroservoelastic models themselves. One shortcoming of such a methodology is the inability to create additional aeroservoelastic models that correspond to changing the dynamic pressure, since the aerodynamics and structural dynamics have been combined together. For linear representations, the aerodynamics are taken to change linearly with the dynamic pressure. Hence, it should be a straightforward task to create additional linear aeroservoelastic models that correspond to changing the dynamic pressure only. The present study examines just such a possibility in detail. A consistent basis is used for interpolating the aerodynamic models is used to produce accurate models that can be safely combined with the structural and actuator models in generating the final aeroservoelastic models. The results presented for the AGARD 445.6 wing demonstrate the efficiency of interpolating the aerodynamic model separately before integrating into the aeroservoelastic model. The effectiveness of creating a control law for flutter suppresion for such interpolated points is shown for a subsonic case.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1445af2b elementor-widget elementor-widget-text-editor" data-id="1445af2b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h1><span style="text-decoration: underline;"><a href="https://www.m4-engineering.com/wp-content/uploads/2020/10/GROM_SDM52.pdf">View Publication</a></span></h1>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/efficient-creation-of-aeroservoelastic-models-using-interpolated-aerodynamics-models-2011/">Efficient Creation of Aeroservoelastic Models Using Interpolated Aerodynamics Models (2011)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Computational Fluid Dynamics and Doublet-Lattice Calculation of Unsteady Control Surface Aerodynamics (2009)</title>
+		<link>https://www.m4-engineering.com/computational-fluid-dynamics-and-doublet-lattice-calculation-of-unsteady-control-surface-aerodynamics-2009/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Fri, 11 Dec 2009 20:00:54 +0000</pubDate>
+				<category><![CDATA[Publications]]></category>
+		<category><![CDATA[aerodynamics]]></category>
+		<category><![CDATA[CFD]]></category>
+		<category><![CDATA[Doublet lattice]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=4257</guid>
+
+					<description><![CDATA[<p>Introduction With the increased interaction among the aerodynamic, structures, and controls disciplines in advanced aircraft, it is increasingly important to predict accurately the aerodynamic forces due to control surface deflection. The aerodynamic behavior of oscillating control surfaces has historically been difficult to predict analytically. The doublet-lattice method (DLM)1 has been the de-facto standard unsteady aerodynamic analysis tool in the subsonic regime for [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/computational-fluid-dynamics-and-doublet-lattice-calculation-of-unsteady-control-surface-aerodynamics-2009/">Computational Fluid Dynamics and Doublet-Lattice Calculation of Unsteady Control Surface Aerodynamics (2009)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="4257" class="elementor elementor-4257">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-5dc720af elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5dc720af" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-65a59a8c" data-id="65a59a8c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4f6b9a0f elementor-widget elementor-widget-heading" data-id="4f6b9a0f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Introduction</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-14eb3c83 elementor-widget elementor-widget-text-editor" data-id="14eb3c83" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>With the increased interaction among the aerodynamic, structures, <span style="font-size: 14px;">and controls disciplines in advanced aircraft, it is increasingly </span><span style="font-size: 14px;">important to predict accurately the aerodynamic forces </span><span style="font-size: 14px;">due to control surface deflection. The aerodynamic behavior of </span><span style="font-size: 14px;">oscillating control surfaces has historically been difficult to predict </span><span style="font-size: 14px;">analytically. The doublet-lattice method (DLM)1 has been the </span><span style="font-size: 14px;">de-facto standard unsteady aerodynamic analysis tool in the subsonic </span><span style="font-size: 14px;">regime for decades, but because it is based on the linear potential </span><span style="font-size: 14px;">equation, it has had limited success in computing control surface </span><span style="font-size: 14px;">aerodynamics. In practice, the aerodynamic results from the DLM </span><span style="font-size: 14px;">(or a similar process) were modified using (sometimes large) correction </span><span style="font-size: 14px;">factors to improve correlation with test data. These correction </span><span style="font-size: 14px;">factors are typically based on steady wind-tunnel data and are applied </span><span style="font-size: 14px;">to steady and unsteady conditions alike. This is undesirable </span><span style="font-size: 14px;">because the steady corrections will not necessarily be representative </span><span style="font-size: 14px;">of the unsteady flow and cannot correct the unsteady phase </span><span style="font-size: 14px;">lag.</span></p><p>With the advent of low-cost, high-power computers, the use of <span style="font-size: 14px;">unsteady computational fluid dynamics (CFD) for the calculation of </span><span style="font-size: 14px;">unsteady control surface aerodynamics has recently become more </span><span style="font-size: 14px;">attractive. In this study, CFL3D.AE-BA2 was used to compute unsteady </span><span style="font-size: 14px;">Navier–Stokes solutions of oscillatory control surface motion. </span><span style="font-size: 14px;">This model includes not only the effects of compressibility and </span><span style="font-size: 14px;">transonic shocks, but also accounts for viscous effects. To reduce </span><span style="font-size: 14px;">the computational time of the CFD solutions, the control surface </span><span style="font-size: 14px;">deflection (as a function of time) has the form of an exponential </span><span style="font-size: 14px;">pulse (as opposed to a pure sinusoid), and the frequency-domain </span><span style="font-size: 14px;">unsteady aerodynamics were computed using a Fourier transform.</span></p><p><span style="font-size: 14px;"> </span><span style="font-size: 14px;">For cases with small angle of attack and no deflected control </span><span style="font-size: 14px;">surface, linear lifting surface theory has been shown to be valid </span><span style="font-size: 14px;">outside the transonic regime. This approach is no longer valid when </span>analysis is required for cases involving transonic flow or significant viscous effects, or when modeling of details such as control surface gaps is important. Upstream propagation of information for cases in the transonic regime also cannot be predicted by linear theory. A classic example of such flow  characteristics occurs in the shock wave present for flows with a supersonic pocket at the surface of the wing. There is a significant difference in the magnitude and phase results obtained from linear theory and those obtained from test and CFD in the region upstream of the transition back to subsonic flow. It is the purpose of this study to investigate the benefits of higher fidelity aerodynamic theories in improving the accuracy of unsteady aerodynamic predictions.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-715861f8 elementor-widget elementor-widget-text-editor" data-id="715861f8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h1><span style="text-decoration: underline;"><a href="https://www.m4-engineering.com/wp-content/uploads/2020/10/AIAA-2001-4697-657.pdf" target="_blank" rel="noopener">View Publication</a></span></h1>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/computational-fluid-dynamics-and-doublet-lattice-calculation-of-unsteady-control-surface-aerodynamics-2009/">Computational Fluid Dynamics and Doublet-Lattice Calculation of Unsteady Control Surface Aerodynamics (2009)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>CFD and Doublet-Lattice Calculation of Unsteady Control Surface Aerodynamics and Correlation with Wind Tunnel Test (2003)</title>
+		<link>https://www.m4-engineering.com/cfd-and-doublet-lattice-calculation-of-unsteady-control-surface-aerodynamics-and-correlation-with-wind-tunnel-test-2003/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Fri, 11 Jul 2003 17:58:19 +0000</pubDate>
+				<category><![CDATA[Publications]]></category>
+		<category><![CDATA[aerodynamics]]></category>
+		<category><![CDATA[CFD]]></category>
+		<category><![CDATA[Doublet lattice]]></category>
+		<category><![CDATA[wind tunnel]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=4233</guid>
+
+					<description><![CDATA[<p>Introduction With the increased interaction between the aerodynamic, structures, and controls disciplines in advanced aircraft, it is increasingly important to accurately predict the aerodynamic forces due to control surface deflection. The aerodynamic behavior of oscillating control surfaces has historically been difficult to predict analytically. The Doublet-Lattice Method (DLM)1 has been the de-facto standard unsteady aerodynamic analysis tool in the subsonic regime for decades, but [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/cfd-and-doublet-lattice-calculation-of-unsteady-control-surface-aerodynamics-and-correlation-with-wind-tunnel-test-2003/">CFD and Doublet-Lattice Calculation of Unsteady Control Surface Aerodynamics and Correlation with Wind Tunnel Test (2003)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="4233" class="elementor elementor-4233">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-7e14e7a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="7e14e7a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1b16b541" data-id="1b16b541" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-6a0e0334 elementor-widget elementor-widget-heading" data-id="6a0e0334" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Introduction</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-5ecb7c5b elementor-widget elementor-widget-text-editor" data-id="5ecb7c5b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>With the increased interaction between the <span style="font-size: 14px;">aerodynamic, structures, and controls disciplines in </span><span style="font-size: 14px;">advanced aircraft, it is increasingly important to </span><span style="font-size: 14px;">accurately predict the aerodynamic forces due to </span><span style="font-size: 14px;">control surface deflection. The aerodynamic </span><span style="font-size: 14px;">behavior of oscillating control surfaces has </span><span style="font-size: 14px;">historically been difficult to predict analytically. The </span><span style="font-size: 14px;">Doublet-Lattice Method (DLM)1 has been the de-facto </span><span style="font-size: 14px;">standard unsteady aerodynamic analysis tool in </span><span style="font-size: 14px;">the subsonic regime for decades, but since it is based </span><span style="font-size: 14px;">on the linear potential equation, it has had limited </span><span style="font-size: 14px;">success in computing control surface aerodynamics. </span><span style="font-size: 14px;">In practice, the aerodynamic results from the DLM </span><span style="font-size: 14px;">(or a similar process) were modified using </span><span style="font-size: 14px;">(sometimes large) correction factors to improve </span><span style="font-size: 14px;">correlation with test data. </span></p><p><span style="font-size: 14px;">These correction factors </span><span style="font-size: 14px;">are typically based on steady wind tunnel data, and </span><span style="font-size: 14px;">are applied to steady and unsteady conditions alike. </span><span style="font-size: 14px;">This is undesirable because the steady corrections </span><span style="font-size: 14px;">will not necessarily be representative of the unsteady </span><span style="font-size: 14px;">flow, and cannot correct the unsteady phase angle. </span></p><p><span style="font-size: 14px;">With the advent of low-cost, high-power computers, </span><span style="font-size: 14px;">the use of unsteady Computational Fluid Dynamics </span><span style="font-size: 14px;">(CFD) for the calculation of unsteady control surface </span><span style="font-size: 14px;">aerodynamics has recently become more attractive. </span><span style="font-size: 14px;">In this study, CFL3D.AE-BA2 was used to compute </span><span style="font-size: 14px;">unsteady Navier-Stokes solutions of oscillatory </span><span style="font-size: 14px;">control surface motion. This model includes not only </span><span style="font-size: 14px;">the effects of compressibility and transonic shocks, </span><span style="font-size: 14px;">but also accounts for viscous effects.</span></p><p>Correlation of CFD to test data for the BACT model <span style="font-size: 14px;">was accomplished by Schuster, et al.3 with a </span><span style="font-size: 14px;">ENS3DAE Navier-Stokes analysis. In the </span><span style="font-size: 14px;">investigation discussed in this paper, the first step </span><span style="font-size: 14px;">was to similarly validate CFL3D. The study </span><span style="font-size: 14px;">performed by Schuster, et al. was used as another </span><span style="font-size: 14px;">source of comparison for the validity of our CFD </span><span style="font-size: 14px;">results.</span></p><p>For cases with small angle of attack and no deflected <span style="font-size: 14px;">control surface, linear theory has been shown to be </span><span style="font-size: 14px;">valid outside the transonic regime. When analysis is </span><span style="font-size: 14px;">required for cases with an oscillating control surface, </span><span style="font-size: 14px;">or for cases in the transonic regime, the validity of </span><span style="font-size: 14px;">linear theory breaks down. Flow characteristics are </span><span style="font-size: 14px;">introduced which cannot be predicted by linear </span><span style="font-size: 14px;">theory. A classic example of such flow </span><span style="font-size: 14px;">characteristics occurs in the shock wave present for </span><span style="font-size: 14px;">flows with a supersonic pocket at the surface of the </span><span style="font-size: 14px;">wing. There will be a difference in the results </span><span style="font-size: 14px;">obtained from linear theory and those obtained from </span><span style="font-size: 14px;">test and CFD in the region upstream of the transition </span><span style="font-size: 14px;">back to subsonic flow. Test data and CFD should </span><span style="font-size: 14px;">predict an increase in phase lag in the unsteady </span><span style="font-size: 14px;">pressure results. This behavior will be seen as near </span><span style="font-size: 14px;">zero magnitude for cases in which the supersonic </span><span style="font-size: 14px;">pocket has even higher velocity. This behavior will </span><span style="font-size: 14px;">not be predicted by linear theory, and it is of the </span><span style="font-size: 14px;">interest of this study to see at what Mach number and </span><span style="font-size: 14px;">frequency of control surface oscillation this poor </span><span style="font-size: 14px;">correlation begins to occur.</span></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a47b12b elementor-widget elementor-widget-text-editor" data-id="a47b12b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h1><span style="text-decoration: underline;"><a href="https://www.m4-engineering.com/wp-content/uploads/2020/10/AIAA_99_1469.pdf">View Publication</a></span></h1>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/cfd-and-doublet-lattice-calculation-of-unsteady-control-surface-aerodynamics-and-correlation-with-wind-tunnel-test-2003/">CFD and Doublet-Lattice Calculation of Unsteady Control Surface Aerodynamics and Correlation with Wind Tunnel Test (2003)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

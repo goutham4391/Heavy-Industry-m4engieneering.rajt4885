@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Finite Element Analysis Archives - M4 Engineering</title>
+	<atom:link href="https://www.m4-engineering.com/tag/finite-element-analysis/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.m4-engineering.com/tag/finite-element-analysis/</link>
+	<description>Engineering</description>
+	<lastBuildDate>Thu, 10 Dec 2020 17:05:31 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
+
+<image>
+	<url>https://www.m4-engineering.com/wp-content/uploads/2021/01/cropped-logo1_png_2020-32x32.png</url>
+	<title>Finite Element Analysis Archives - M4 Engineering</title>
+	<link>https://www.m4-engineering.com/tag/finite-element-analysis/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Snap-Through Buckling in Simcenter 3D</title>
+		<link>https://www.m4-engineering.com/snap-through-buckling-in-simcenter-3d/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Wed, 09 Dec 2020 20:37:00 +0000</pubDate>
+				<category><![CDATA[Technical Blog]]></category>
+		<category><![CDATA[Arc Length]]></category>
+		<category><![CDATA[buckling analysis]]></category>
+		<category><![CDATA[Finite Element Analysis]]></category>
+		<category><![CDATA[Nonlinear analysis]]></category>
+		<category><![CDATA[NX Nastran]]></category>
+		<category><![CDATA[Simcenter 3D]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=4787</guid>
+
+					<description><![CDATA[<p>Learn about snap-through buckling analysis – why is it hard and how can we analyze this behavior in Simcenter 3D? Take advantage of the Arc-Length method in Simcenter Nastran to solve a seemingly unsolvable problem. Challenges: Predicting snap-through behavior of structures Finding a way to solve complex nonlinear problems that isn’t readily apparent How to [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/snap-through-buckling-in-simcenter-3d/">Snap-Through Buckling in Simcenter 3D</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="4787" class="elementor elementor-4787">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-408a232 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="408a232" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2c9b41c" data-id="2c9b41c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-37efc52 elementor-widget elementor-widget-text-editor" data-id="37efc52" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Learn about snap-through buckling analysis – why is it hard and how can we analyze this behavior in Simcenter 3D? Take advantage of the Arc-Length method in Simcenter Nastran to solve a seemingly unsolvable problem.</p><h3>Challenges:</h3><ul><li>Predicting snap-through behavior of structures</li><li>Finding a way to solve complex nonlinear problems that isn’t readily apparent</li><li>How to accurately capture critical deformation data using analysis</li></ul><h3>Values:</h3><ul><li>Arc-Length methods enable solution of snap-through problems</li><li>Avoid buckling failure of snap through structures by using simulation</li><li>Easily visualize loads and displacements using Simcenter 3D with Simcenter Nastran</li></ul>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d08791c elementor-widget elementor-widget-heading" data-id="d08791c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Snap-Through Buckling</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-788ccb8 elementor-widget elementor-widget-text-editor" data-id="788ccb8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>In order to understand what snap-through buckling is, consider the simple problem illustrated below. As a force P is applied, compressive load is applied to the two bars. The system will remain stable so long as the bars are above a horizontal line formed by the two pinned ends. As soon as the load application point moves below this horizontal line, the structure is no longer stable and the compressive load in the bars actually contributes to buckling which takes place rapidly (snap). Eventually the system becomes stable again as additional applied load is reacted by tension in the bars. However, in many structures, this snap-through behavior will most likely lead to failure.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-77e0c2c elementor-widget elementor-widget-image" data-id="77e0c2c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="381" height="156" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db1.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db1.png 381w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db1-300x123.png 300w" sizes="(max-width: 381px) 100vw, 381px" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-592e498 elementor-widget elementor-widget-text-editor" data-id="592e498" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Simple structure illustrating snap-through behavior</em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-5dacb21 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5dacb21" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3169814" data-id="3169814" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-218d5fb elementor-widget elementor-widget-heading" data-id="218d5fb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Snap-Through Instability is Hard</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-18c6c61 elementor-widget elementor-widget-text-editor" data-id="18c6c61" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>As you can imagine, this type of snap-through instability is difficult to model and analyze. Take for example the plot below which shows the load-deflection curve for a hinged cylindrical shell undergoing snap-through buckling. Nonlinear methods using Newton’s method will try to trace a path that looks something like the dashed red line. Little problem: the actual deformation takes a completely different path as the structure undergoes a very sudden and quick “snap” behavior. Sure, it’s possible to wait long enough and luck into a solution. But even if a solution is found, we certainly can never visualize the snap through loads and displacements accurately using these analysis methods (notice that there are three possible solutions at the displacement defined by the red vertical line).</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-334cce1 elementor-widget elementor-widget-image" data-id="334cce1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db3-p9lf3qqt681p3t6rvjyv4h9xxk02tskii8ic6v0kqo.png" title="db3" alt="db3" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-109ad49 elementor-widget elementor-widget-text-editor" data-id="109ad49" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Load-deflection curve for hinged cylindrical shell, typical nonlinear solver approach shown with dashed red line, vertical red line illustrates three possible solutions at the defined displacement [1]</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ad7a93a elementor-widget elementor-widget-text-editor" data-id="ad7a93a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>How can we solve this?</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-e426bbd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e426bbd" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cd8b5f1" data-id="cd8b5f1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ee8c650 elementor-widget elementor-widget-heading" data-id="ee8c650" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Arc-Length Method to the Rescue</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-04a6864 elementor-widget elementor-widget-text-editor" data-id="04a6864" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The Arc-Length method offers an efficient and versatile scheme for solving these exceptionally difficult, nonlinear problems. What differentiates the arc-length method? Let’s start by looking at Newton’s method first with the figure below:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6c3d970 elementor-widget elementor-widget-image" data-id="6c3d970" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db4-p9lf3qqt6814n7uhjhaeldfxjpjvjwlbwr0i5whmgw.png" title="db4" alt="db4" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e597c38 elementor-widget elementor-widget-text-editor" data-id="e597c38" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Schematic representation of the Newton solver [2]</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-057f8e6 elementor-widget elementor-widget-text-editor" data-id="057f8e6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Notice that Newton’s method traces the nonlinear problem by computing the tangent stiffness. As the curve flattens (i.e. the tangent stiffness approaches zero), the step size used by the solver becomes extremely slow. Additionally, the method fails to solve the problem once a limit point is reached. This is exactly what happens in snap-through buckling. Now let’s compare this method to the arc-length method shown below. For the Arc-Length method, the increment is defined by a circle of radius Δl as shown.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a5c6a48 elementor-widget elementor-widget-image" data-id="a5c6a48" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db5-p9lf3qqt6814n7uhjhaeldfxjpjvjwlbwr0i5whmgw.png" title="db5" alt="db5" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9d0d754 elementor-widget elementor-widget-text-editor" data-id="9d0d754" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Schematic representation of the arc length solver [2]</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e2702bb elementor-widget elementor-widget-text-editor" data-id="e2702bb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The advantage of this is that multiple solutions can be found and the correct ones identified as the solution path is traversed. See the figure below for example. Additionally, the step size does not need to become infinitely small like it had to for Newton’s method when a horizontal tangent stiffness was encountered. This method enables us to solve complex problems that have both horizontal and vertical tangents.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6ce99e5 elementor-widget elementor-widget-image" data-id="6ce99e5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="768" height="330" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db6-768x330.png" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db6-768x330.png 768w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db6-300x129.png 300w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db6.png 888w" sizes="(max-width: 768px) 100vw, 768px" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2920a83 elementor-widget elementor-widget-text-editor" data-id="2920a83" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>The Arc-Length method in action [2]</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6f84682 elementor-widget elementor-widget-text-editor" data-id="6f84682" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>In this blog, I will walk you through snap-through analysis in Simcenter 3D with NX Nastran using the Arc-Length method.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-bfce39f elementor-widget elementor-widget-heading" data-id="bfce39f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Step 1: Define the Problem</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-701c374 elementor-widget elementor-widget-text-editor" data-id="701c374" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>We will be walking through the hinged cylindrical shell problem defined by the figure shown below and previously discussed.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e8dcaa4 elementor-widget elementor-widget-image" data-id="e8dcaa4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db7-p9lf3qqt681p3t6rvjyv4h9xxk02tskii8ic6v0kqo.png" title="db7" alt="db7" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0bce01f elementor-widget elementor-widget-text-editor" data-id="0bce01f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Problem definition for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-dff9638 elementor-widget elementor-widget-text-editor" data-id="dff9638" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The geometry and material behavior are shown on this figure.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-07692da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="07692da" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-04fe6d9" data-id="04fe6d9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4b1c3d0 elementor-widget elementor-widget-heading" data-id="4b1c3d0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Step 2: Build the Finite Element Model</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ecf1bf4 elementor-widget elementor-widget-text-editor" data-id="ecf1bf4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The finite element model was built in Simcenter 3D using CQUAD4 elements. Only linear material properties were used. The figure below illustrates the model and boundary conditions.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6a1e3d9 elementor-widget elementor-widget-image" data-id="6a1e3d9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db8-p9lf3qr0hclh8q1qc50dfobzjfvfho4mn63crrkfa6.png" title="db8" alt="db8" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2ab3108 elementor-widget elementor-widget-text-editor" data-id="2ab3108" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Finite element model of hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e7678f0 elementor-widget elementor-widget-text-editor" data-id="e7678f0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The blue lines represent the hinged boundary condition. The red arrow represents the applied load (0.6 kN).</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-1d8b29a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1d8b29a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-93a6f4a" data-id="93a6f4a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ef74ff4 elementor-widget elementor-widget-heading" data-id="ef74ff4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Step 3: Set up the Solution</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-46d8567 elementor-widget elementor-widget-text-editor" data-id="46d8567" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The analysis will be performed using NX Nastran solution sequence 106. The Arc-Length method will be used. The following nonlinear controls and arc-length controls were defined:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5ae22e7 elementor-widget elementor-widget-image" data-id="5ae22e7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="417" height="915" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db9.png" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db9.png 417w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db9-137x300.png 137w" sizes="(max-width: 417px) 100vw, 417px" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c291713 elementor-widget elementor-widget-text-editor" data-id="c291713" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Nonlinear parameters for snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4baef02 elementor-widget elementor-widget-image" data-id="4baef02" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="393" height="416" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db10.png" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db10.png 393w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db10-283x300.png 283w" sizes="(max-width: 393px) 100vw, 393px" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b1c81e6 elementor-widget elementor-widget-text-editor" data-id="b1c81e6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Arc-Length method parameters for snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6e5b1f2 elementor-widget elementor-widget-text-editor" data-id="6e5b1f2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>It should be noted that these parameters need to be defined for both the solution sequence as well as the subcase. Finally, large displacements need to be enabled:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a1d19cf elementor-widget elementor-widget-image" data-id="a1d19cf" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db11-p9lf3qqynkfoiltk7vqb27tgk78aev9tppgcl3n3q0.png" title="db11" alt="db11" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-34f5671 elementor-widget elementor-widget-text-editor" data-id="34f5671" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Enabling large displacements in Simcenter 3D</em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-99ddf0a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="99ddf0a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f311d74" data-id="f311d74" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-bb8fd50 elementor-widget elementor-widget-heading" data-id="bb8fd50" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Step 4: Solve and Post-Process</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c65fc51 elementor-widget elementor-widget-text-editor" data-id="c65fc51" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Now comes the fun part: reviewing the results.</p><p>First, let’s look at an animation of the snap-through behavior.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e87ba72 elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="e87ba72" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtu.be\/CoQqlBkiwCQ&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-62682c9 elementor-widget elementor-widget-text-editor" data-id="62682c9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Animation showing snap-through buckling of hinged cylindrical shell</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-7454f3f elementor-widget elementor-widget-text-editor" data-id="7454f3f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Note that the animation is at 10% model scale. We would also like to look at the deflection and applied load vs iteration.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9b52771 elementor-widget elementor-widget-image" data-id="9b52771" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db12-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjjwe.png" title="db12" alt="db12" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a4a1fec elementor-widget elementor-widget-text-editor" data-id="a4a1fec" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Displacement vs. iteration for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-95a904a elementor-widget elementor-widget-image" data-id="95a904a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db13-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjjzq.png" title="db13" alt="db13" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b6c8079 elementor-widget elementor-widget-text-editor" data-id="b6c8079" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Applied load vs. iteration for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fbef491 elementor-widget elementor-widget-text-editor" data-id="fbef491" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Finally, we would like to reproduce the plot from the reference. To do this, we will plot displacement vs. load in Simcenter 3D. We will first save the two graphs as Afu’s. Afu’s allow us to store XY data on our computer so that we can reference it when we create additional plots.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6ff1971 elementor-widget elementor-widget-image" data-id="6ff1971" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="279" height="208" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db14.png" class="attachment-large size-large" alt="" loading="lazy" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-3545555 elementor-widget elementor-widget-text-editor" data-id="3545555" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Exporting a graph to Afu in Simcenter 3D</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-71dd3b7 elementor-widget elementor-widget-text-editor" data-id="71dd3b7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Next, we create a Two Function plot as shown.</p><p> </p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-be4daff elementor-widget elementor-widget-image" data-id="be4daff" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db15-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjk5u.png" title="db15" alt="db15" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-70b476c elementor-widget elementor-widget-text-editor" data-id="70b476c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Creating a Two Function plot in Simcenter 3D</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-23755da elementor-widget elementor-widget-text-editor" data-id="23755da" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The result is shown below. The general behavior appears to match closely with what we expected.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c6a0cf2 elementor-widget elementor-widget-image" data-id="c6a0cf2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db16-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjkic.png" title="db16" alt="db16" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-691aedf elementor-widget elementor-widget-text-editor" data-id="691aedf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Two Function plot of force vs displacement for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2659f27 elementor-widget elementor-widget-text-editor" data-id="2659f27" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>This plot is shown overlaid above the original plot below:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6a90604 elementor-widget elementor-widget-image" data-id="6a90604" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db17-p9lf3qqt681p3t6rvjyv4h9xxk02tskii8ic6v0kqo.png" title="db17" alt="db17" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8f8916b elementor-widget elementor-widget-text-editor" data-id="8f8916b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Comparison of NX Nastran results vs. literature for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e879364 elementor-widget elementor-widget-text-editor" data-id="e879364" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Notice that there is very good agreement with the expected result. We were able to accurately capture snap-through buckling behavior for a hinged cylindrical shell.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-ef20852 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ef20852" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0dc46d9" data-id="0dc46d9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-0446c04 elementor-widget elementor-widget-heading" data-id="0446c04" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Summary</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-790ca0e elementor-widget elementor-widget-text-editor" data-id="790ca0e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Problems that exhibit snap-through buckling can be very difficult to solve. As such, they require a different solution approach. The Arc-Length method is perfectly suited for these types of problems. In this blog we walked through a snap-through buckling analysis in Simcenter 3D with NX Nastran. We were able to solve a difficult nonlinear problem and match literature very well.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-b33a79d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b33a79d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-68d8f6b" data-id="68d8f6b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-62ed3cc elementor-widget elementor-widget-image" data-id="62ed3cc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="1024" height="680" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db18-1024x680.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db18-1024x680.jpg 1024w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db18-300x199.jpg 300w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db18-768x510.jpg 768w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db18.jpg 1237w" sizes="(max-width: 1024px) 100vw, 1024px" />														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-68b9c90" data-id="68b9c90" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f3b4e5d elementor-widget elementor-widget-heading" data-id="f3b4e5d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Written by Vitaliy Rezekulov</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-24736d5 elementor-widget elementor-widget-text-editor" data-id="24736d5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Vitaliy Rezekulov is a Senior Engineer with a background in structural analysis. He has worked on some interesting linear and nonlinear problems. Outside of work he enjoys spending time with his family and friends.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-5deec84 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5deec84" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4783490" data-id="4783490" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-907c1a9 elementor-widget elementor-widget-text-editor" data-id="907c1a9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h3>References</h3><p>[1] <a href="https://www.academia.edu/12783579/Solution_techniques_for_non_linear_finite_element_problems">https://www.academia.edu/12783579/Solution_techniques_for_non_linear_finite_element_problems</a></p><p>[2] <a href="https://scholar.harvard.edu/files/vasios/files/ArcLength.pdf">https://scholar.harvard.edu/files/vasios/files/ArcLength.pdf</a></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/snap-through-buckling-in-simcenter-3d/">Snap-Through Buckling in Simcenter 3D</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Simcenter 3D: Analysis of a Pinned Lug</title>
+		<link>https://www.m4-engineering.com/simcenter-3d-analysis-of-a-pinned-lug/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Wed, 11 Nov 2020 15:20:00 +0000</pubDate>
+				<category><![CDATA[Technical Blog]]></category>
+		<category><![CDATA[FEA]]></category>
+		<category><![CDATA[Finite Element Analysis]]></category>
+		<category><![CDATA[Lug]]></category>
+		<category><![CDATA[Lug stress analysis]]></category>
+		<category><![CDATA[Nastran]]></category>
+		<category><![CDATA[Peterson’s Stress Concentration Factors]]></category>
+		<category><![CDATA[Simcenter 3D]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=4537</guid>
+
+					<description><![CDATA[<p>Not all loading conditions are created equal. In this blog you will learn when and how to use Siemens Simcenter 3D to analyze complex loading conditions that are outside of the range for hand calculations. Simcenter 3D can be used to solve these types of problems to calculate stress, reduce weight and improve design as [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/simcenter-3d-analysis-of-a-pinned-lug/">Simcenter 3D: Analysis of a Pinned Lug</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="4537" class="elementor elementor-4537">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-a5dbeca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a5dbeca" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-275444e" data-id="275444e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2f497df elementor-widget elementor-widget-text-editor" data-id="2f497df" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Not all loading conditions are created equal. In this blog you will learn when and how to use Siemens Simcenter 3D to analyze complex loading conditions that are outside of the range for hand calculations. Simcenter 3D can be used to solve these types of problems to calculate stress, reduce weight and improve design as your project requires.</p>
+<h3><strong>Challenges</strong>:</h3>
+<ul>
+<li>Stresses must be within acceptable range</li>
+<li>Save weight by reducing stress</li>
+<li>Properly analyze complex loading conditions outside the range of hand calculations</li>
+</ul>
+<h3><strong>Values:</strong></h3>
+<ul>
+<li>Use Simcenter 3D with contact to predict lug stresses</li>
+<li>Hand calculations to validate lug stress analysis results</li>
+<li>When to use FEA vs hand calculations</li>
+</ul>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-4112069 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4112069" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9ea09ba" data-id="9ea09ba" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-eaf02af elementor-widget elementor-widget-text-editor" data-id="eaf02af" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The following pinned lug geometry will be analyzed using Simcenter Nastran.  The lug is made of Aluminum 7050-T7452 per AMS 4108.  A nominal diameter 3/8” pin (0.375 inches, 9.525 mm), made of AISI 4130 HT90, which is a low alloy steel, bears on the face of the lug.  A surface-to-surface contact between the pin and lug face is used.  A chamfer is also applied on the inside edge where the pin contacts the lug.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-139d1cc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="139d1cc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-9e08a3c" data-id="9e08a3c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-dbe0245 elementor-widget elementor-widget-image" data-id="dbe0245" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp2-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjkm8.png" title="novbp2" alt="novbp2" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-72fa0b1 elementor-widget elementor-widget-text-editor" data-id="72fa0b1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>Lug Dimensions</strong></em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-66ef3ee elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="66ef3ee" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-6213670" data-id="6213670" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3d36e13 elementor-widget elementor-widget-text-editor" data-id="3d36e13" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The pin finite element model is shown below.  A constraint at the wall restrains the lug in translation and rotation (123456 degrees of freedom).  For simplicity, a 1000 lb (4448 N) load is applied. As a stepping stone in the analysis a simple no gap (<em>e</em> = 0%) model will be analyzed.</p><p>Of key importance is that the pin and lug have dissimilar meshes.  It’s common for contact methodologies to require coincident meshes, which puts additional burden on the user.  Simcenter 3D and Simcenter Nastran (formerly known as NX Nastran) support dissimilar meshes.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-6675083 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6675083" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-90f4067" data-id="90f4067" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-275262f elementor-widget elementor-widget-image" data-id="275262f" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp3-p9lf3rosuegyu7s72e4xmpkx5l3nmkdk1u3u2dlnpy.png" title="novbp3" alt="novbp3" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-42acf7e elementor-widget elementor-widget-text-editor" data-id="42acf7e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>FEM of the Pin-Lug in Simcenter 3D</strong></em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-419f4b8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="419f4b8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-573427e" data-id="573427e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-32115f0 elementor-widget elementor-widget-text-editor" data-id="32115f0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>A small amount of static friction is applied (μ=0.1) to improve convergence.  Contact is simply done by selecting the two CAD surfaces (the face of the pin and the lug face).  Initial penetration is automatically calculated from the geometry (and is 0.0).</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-71b9602 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="71b9602" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5a36380" data-id="5a36380" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-956569c elementor-widget elementor-widget-image" data-id="956569c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp4-p9lf3smov0o1vxz015tmknuwq7m5x2c3bfebqbhnf8.png" title="novbp4" alt="novbp4" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-140316e elementor-widget elementor-widget-text-editor" data-id="140316e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>Contact in Simcenter 3D</strong></em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-3d2f581 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="3d2f581" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f389e3c" data-id="f389e3c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d5591a1 elementor-widget elementor-widget-text-editor" data-id="d5591a1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The stress at the midplane of the lug for the Unit Load condition is taken to be 11,288 psi (11.288 ksi, 77.828 MPa).  Note that there is artificial peaking at the edge of the lug (not shown).  The hand calculation shows the actual FEM stress is lower than the hand calculation. </p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-18213cc elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="18213cc" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a5935a3" data-id="a5935a3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5472cca elementor-widget elementor-widget-image" data-id="5472cca" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp5-p9lf3roud7xsrzb05xvblxccyyaxuwf85pz07xjhf2.png" title="novbp5" alt="novbp5" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2176360 elementor-widget elementor-widget-text-editor" data-id="2176360" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>Maximum Principal Stress for Lug with No Gap</strong></em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-1752dea elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1752dea" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3576b7e" data-id="3576b7e" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-0ebc31d elementor-widget elementor-widget-text-editor" data-id="0ebc31d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The hand calculation was performed with a <em> P</em> = 1000 lb unit case for validation of the stress results.  First, we’ll calculate the nominal stress using the area represented by the dashed region.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-421cd6f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="421cd6f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-abcf29a" data-id="abcf29a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-011d554 elementor-widget elementor-widget-image" data-id="011d554" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp6-p9lf3ros8h319idh0z1ku82qtu7xxmraeok605miyg.png" title="novbp6" alt="novbp6" />														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-667ef81 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="667ef81" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f4ab6eb" data-id="f4ab6eb" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-c72c35a elementor-widget elementor-widget-text-editor" data-id="c72c35a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>Area for Nominal Stress Calculation</strong></em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4de2145 elementor-widget elementor-widget-text-editor" data-id="4de2145" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex? \sigma_{nominal} = \frac{P}{A} = \frac{1000}{(H - d)h} = \frac{1000}{(1.036 - 0.375) * 0.45} = 3361 \text{psi}" border="0" /> <!-- wp:paragraph -->					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-da1088b elementor-widget elementor-widget-text-editor" data-id="da1088b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The nominal stress does not consider the effects of the hole, so we need to adjust the nominal stress using:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5a3a1ad elementor-widget elementor-widget-text-editor" data-id="5a3a1ad" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex? \sigma_{max} = K_t \sigma_{nominal}" border="0" /> <!-- wp:paragraph -->					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-f331a33 elementor-widget elementor-widget-text-editor" data-id="f331a33" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Where <em style="">K<sub style="">t</sub></em> is composed of a geometric correction and a correction due to a material mismatch between the pin and the lug (steel vs. aluminum).</p>
+<p>Typically, Chart 5.12 from Peterson would be used to calculate the <em style="">K<sub style="">t</sub></em> for the lug.&nbsp; However, for large thickness to diameter ratios (<em style="">h/d</em> = 0.45/0.375 = 1.2) it does not apply.</p>
+<p>Chart 5.11 from Peterson (typically used for round end lugs with <em style="">h/d</em> &lt; 0.5) cannot be used to calculate the effects of a rounded lug since&nbsp; <em style="">h/d</em> = 0.45/0.375 = 1.2 (thickness to diameter ratio). The key reason for this mismatch is the high thickness of the lug, which increases pin bending and thus pin bearing on the lug face.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-d02ae2c elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="d02ae2c" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-618638b" data-id="618638b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b054ae7 elementor-widget elementor-widget-image" data-id="b054ae7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp9-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjkvo.png" title="novbp9" alt="novbp9" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-da39f23 elementor-widget elementor-widget-text-editor" data-id="da39f23" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>Chart 5.12:  Stress concentration factors  for round-ended lugs, c / H &gt; 1.5, h / d &lt; 0.5  .</strong></em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-cc3b8db elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="cc3b8db" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-530e8ed" data-id="530e8ed" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-323f44b elementor-widget elementor-widget-text-editor" data-id="323f44b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The alternative is to use Chart 5.11, which is meant for square end lugs with an <em>h/d</em> &gt; 0.5.  Thankfully, a well round end lug with adequate radius (typical is <em>H/2</em>, which is the case) is similar to a square end lug.  The FEA will show the results match very well.</p><p>The parameter  <em>c/H</em> = 0.518/1.036 = 0.5.  Then d/H = 0.375/1.036 = 0.36 .  Then, using Chart 5.12 from Peterson as well the limiting K<sub>te</sub> being K<sub>t,100</sub> (see the figure below), we can simply use K<sub>te</sub> = K<sub>t,100</sub> = 3.2.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0ec3895 elementor-widget elementor-widget-image" data-id="0ec3895" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp11-p9lf3rova40p51f382icsnlmgkmieaummgaib9i6va.png" title="novbp11" alt="novbp11" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5f8152c elementor-widget elementor-widget-text-editor" data-id="5f8152c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>Chart 5.11: Stress concentration factors  for square-ended lugs, c  / H &gt; 1.5, h /d &lt; 0.5 .</strong></em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e09400f elementor-widget elementor-widget-text-editor" data-id="e09400f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>An additional correction for the material mismatch between the pin and lug is also necessary.  Chart 5.12 from Peterson can be used to calculate this correction factor.  Note that this correction is only necessary because a thick lug is used.  If h/d &lt; 0.5, then it’s not necessary.  For an h/d  =1.2 and E<sub>pin</sub>/E<sub>lug</sub> = E<sub>steel</sub>/E<sub>aluminum</sub> = 3, we can find that K<sub>te</sub>&#8216; / K<sub>te</sub> = 1.16.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-ffbf68f elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ffbf68f" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f0b1fe5" data-id="f0b1fe5" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-be0a7cd elementor-widget elementor-widget-image" data-id="be0a7cd" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp12-p9lf3rouo6mrkc0d6nf0063g4tqspd8czaqu91j3d2.png" title="novbp12" alt="novbp12" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-75da408 elementor-widget elementor-widget-text-editor" data-id="75da408" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<em><strong>Stress concentration factors K<sub>te</sub>&#8216; for thick lugs.  Square or round ended lugs with h/d &gt;0.5 and 0.3&leq; d/H &leq; 0.6.</strong></em>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-250ab17 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="250ab17" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3410289" data-id="3410289" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4db8dc4 elementor-widget elementor-widget-text-editor" data-id="4db8dc4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The combined stress concentration factor is found as:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ab2eea7 elementor-widget elementor-widget-text-editor" data-id="ab2eea7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex? K_{t} = K_{te} \frac{K_{te}^{'}}{K_{te}} = 3.2*1.16 = 3.71" border="0" /> <!-- wp:paragraph -->					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ff447e3 elementor-widget elementor-widget-text-editor" data-id="ff447e3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Finally, the peak stress can be found as:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-3e85af3 elementor-widget elementor-widget-text-editor" data-id="3e85af3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex? \sigma_{max} = K_t \sigma_{nominal} = 3.71 * 3362 = 12,479\text{psi}" border="0" /> <!-- wp:paragraph -->					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-69ee105 elementor-widget elementor-widget-text-editor" data-id="69ee105" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The error between the FEA and the hand calculation is 10% despite the assumptions.  This error is driven by the small gap.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fa49a07 elementor-widget elementor-widget-text-editor" data-id="fa49a07" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex? Error = \frac{\sigma_{FEA}}{\sigma_{handcalc}} - 1 = \frac{11,288}{12,479} - 1 = -0.095 = -9.5%" border="0" /> <!-- wp:paragraph -->					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ca60588 elementor-widget elementor-widget-text-editor" data-id="ca60588" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>In a second case, the same lug geometry will be used, but with a 5% gap instead of no gap. As before, the Simcenter Nastran analysis will be shown first.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-b0d2884 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b0d2884" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b2c2d80" data-id="b2c2d80" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-b8f1401 elementor-widget elementor-widget-image" data-id="b8f1401" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp20-p9lf3rosuegyu7s72e4xmpkx5l3nmkdk1u3u2dlnuo.png" title="novbp20" alt="novbp20" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-915f7ab elementor-widget elementor-widget-text-editor" data-id="915f7ab" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>5% Pin-Lug Gap Distance</strong></em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-1aa5525 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1aa5525" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2aaeac1" data-id="2aaeac1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-5a52a09 elementor-widget elementor-widget-text-editor" data-id="5a52a09" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The peak stress in the lug is simply taken as 12,652 psi (12.652 ksi, 87.232 MPa).</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-4c6a2fe elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4c6a2fe" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-98a2284" data-id="98a2284" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-e711ee4 elementor-widget elementor-widget-image" data-id="e711ee4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="863" height="692" src="https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp21.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp21.png 863w, https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp21-300x241.png 300w, https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp21-768x616.png 768w" sizes="(max-width: 863px) 100vw, 863px" />														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-5d906e6" data-id="5d906e6" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-078fd6c elementor-widget elementor-widget-image" data-id="078fd6c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="1024" height="817" src="https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp22-1024x817.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp22-1024x817.jpg 1024w, https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp22-300x239.jpg 300w, https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp22-768x613.jpg 768w, https://www.m4-engineering.com/wp-content/uploads/2020/10/novbp22.jpg 1053w" sizes="(max-width: 1024px) 100vw, 1024px" />														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-341b2c1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="341b2c1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-77f69f3" data-id="77f69f3" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-45b633d elementor-widget elementor-widget-text-editor" data-id="45b633d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>In the case of a 5% gap, we must consider the more complicated version of the following formula:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2064bd6 elementor-widget elementor-widget-text-editor" data-id="2064bd6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex?     K_{te} = K_{t,0.2} + f(K_{t,100} - K_{t,0.2})" border="0" /> <!-- wp:paragraph --></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c5ca9de elementor-widget elementor-widget-text-editor" data-id="c5ca9de" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>f</em> can be taken from the sub-chart of Chart 5.11 in Peterson.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0713ee4 elementor-widget elementor-widget-image" data-id="0713ee4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/novbp23-p9lf3rotgbuwex6x3t8af733hbzdbhztozni4lkssk.png" title="novbp23" alt="novbp23" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2030757 elementor-widget elementor-widget-text-editor" data-id="2030757" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em><strong>Gap Tolerance Factor</strong></em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-697d5a5 elementor-widget elementor-widget-text-editor" data-id="697d5a5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The following formula must then be applied to correct for the nominal gap value.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0d8a4d2 elementor-widget elementor-widget-text-editor" data-id="0d8a4d2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex?     K_{te} = K_{t,0.2} + f(K_{t,100} - K_{t,0.2}) = 3.45 = 0.2(3.2 - 3.45) = 3.4" border="0" /> <!-- wp:paragraph --></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a6063d3 elementor-widget elementor-widget-text-editor" data-id="a6063d3" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The combined stress concentration factor is found as:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-02904c4 elementor-widget elementor-widget-text-editor" data-id="02904c4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex? K_{t} = K_{te} \frac{K_{te}^{'}}{K_{te}} = 3.4*1.16 = 3.94" border="0" /> <!-- wp:paragraph -->					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-efc8ee2 elementor-widget elementor-widget-text-editor" data-id="efc8ee2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Finally, the peak stress can be found as:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0e3ad22 elementor-widget elementor-widget-text-editor" data-id="0e3ad22" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex? \sigma_{max} = K_t \sigma_{nominal} = 3.94 * 3362 = 13,259\text{psi}" border="0" /> <!-- wp:paragraph -->					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d64ddb8 elementor-widget elementor-widget-text-editor" data-id="d64ddb8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Again, the hand calculation is very accurate (within 5% of the FEA stress).  Note that as the pin diameter becomes smaller, it’s stiffness will decrease.  This decrease in stiffness combined with the thick lug will cause the pin to bend and the predicted stress and the FEM stress to diverge.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fcf9895 elementor-widget elementor-widget-text-editor" data-id="fcf9895" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<!-- /wp:paragraph --> <img class="aligncenter" src="http://latex.codecogs.com/gif.latex?  Error = \frac{12,652}{13,259} - 1 = -0.045 = -4.5%" border="0" /> <!-- wp:paragraph -->					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-294335e elementor-widget elementor-widget-text-editor" data-id="294335e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>In conclusion, a hand calculation can get results that are within 5-10% of a finite element analysis for simple geometry.  For lug designs that match the source data well (e.g., square and round lugs within the limits of the thickness to diameter ranges), hand calculations are appropriate.  For designs outside the typical design space, Simcenter 3D can be used to analyze the configurations with no additional complexity.  These geometric features include lugs with cutouts, which will dramatically change the stress field.  Updating the model to include nonlinear materials and eccentric loading is a simple process as well.</p><p>In a future post, it’s planned to revisit this lug analysis and discuss interference and how that can be beneficial to fatigue performance.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-4131dc6 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4131dc6" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-ab3752b" data-id="ab3752b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-9317897 elementor-widget elementor-widget-heading" data-id="9317897" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Written by Steven Doyle </h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-772e64d elementor-widget elementor-widget-text-editor" data-id="772e64d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Steve Doyle is a Senior Aerospace Engineer with a background in structural analysis, CFD, and programming.  He’s also the author of pyNastran.  Outside of dorky projects, he likes to hike and rock climb!</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-822f653" data-id="822f653" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-1c01f41 elementor-widget elementor-widget-image" data-id="1c01f41" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="390" height="292" src="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-18-1.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-18-1.jpg 390w, https://www.m4-engineering.com/wp-content/uploads/2020/04/pynastran-18-1-300x225.jpg 300w" sizes="(max-width: 390px) 100vw, 390px" />														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-761be55 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="761be55" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-5240869" data-id="5240869" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-dff18b7 elementor-widget elementor-widget-spacer" data-id="dff18b7" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-344b541 elementor-widget elementor-widget-heading" data-id="344b541" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.m4-engineering.com/flutter-analysis-with-pynastran/">Link: Previous Post by the Author</a></h2>		</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/simcenter-3d-analysis-of-a-pinned-lug/">Simcenter 3D: Analysis of a Pinned Lug</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

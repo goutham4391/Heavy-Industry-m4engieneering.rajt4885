@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Arc Length Archives - M4 Engineering</title>
+	<atom:link href="https://www.m4-engineering.com/tag/arc-length/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.m4-engineering.com/tag/arc-length/</link>
+	<description>Engineering</description>
+	<lastBuildDate>Thu, 10 Dec 2020 17:03:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
+
+<image>
+	<url>https://www.m4-engineering.com/wp-content/uploads/2021/01/cropped-logo1_png_2020-32x32.png</url>
+	<title>Arc Length Archives - M4 Engineering</title>
+	<link>https://www.m4-engineering.com/tag/arc-length/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Snap-Through Buckling in Simcenter 3D</title>
+		<link>https://www.m4-engineering.com/snap-through-buckling-in-simcenter-3d/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Wed, 09 Dec 2020 20:37:00 +0000</pubDate>
+				<category><![CDATA[Technical Blog]]></category>
+		<category><![CDATA[Arc Length]]></category>
+		<category><![CDATA[buckling analysis]]></category>
+		<category><![CDATA[Finite Element Analysis]]></category>
+		<category><![CDATA[Nonlinear analysis]]></category>
+		<category><![CDATA[NX Nastran]]></category>
+		<category><![CDATA[Simcenter 3D]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=4787</guid>
+
+					<description><![CDATA[<p>Learn about snap-through buckling analysis – why is it hard and how can we analyze this behavior in Simcenter 3D? Take advantage of the Arc-Length method in Simcenter Nastran to solve a seemingly unsolvable problem. Challenges: Predicting snap-through behavior of structures Finding a way to solve complex nonlinear problems that isn’t readily apparent How to [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/snap-through-buckling-in-simcenter-3d/">Snap-Through Buckling in Simcenter 3D</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="4787" class="elementor elementor-4787">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-408a232 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="408a232" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2c9b41c" data-id="2c9b41c" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-37efc52 elementor-widget elementor-widget-text-editor" data-id="37efc52" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Learn about snap-through buckling analysis – why is it hard and how can we analyze this behavior in Simcenter 3D? Take advantage of the Arc-Length method in Simcenter Nastran to solve a seemingly unsolvable problem.</p><h3>Challenges:</h3><ul><li>Predicting snap-through behavior of structures</li><li>Finding a way to solve complex nonlinear problems that isn’t readily apparent</li><li>How to accurately capture critical deformation data using analysis</li></ul><h3>Values:</h3><ul><li>Arc-Length methods enable solution of snap-through problems</li><li>Avoid buckling failure of snap through structures by using simulation</li><li>Easily visualize loads and displacements using Simcenter 3D with Simcenter Nastran</li></ul>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-d08791c elementor-widget elementor-widget-heading" data-id="d08791c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Snap-Through Buckling</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-788ccb8 elementor-widget elementor-widget-text-editor" data-id="788ccb8" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>In order to understand what snap-through buckling is, consider the simple problem illustrated below. As a force P is applied, compressive load is applied to the two bars. The system will remain stable so long as the bars are above a horizontal line formed by the two pinned ends. As soon as the load application point moves below this horizontal line, the structure is no longer stable and the compressive load in the bars actually contributes to buckling which takes place rapidly (snap). Eventually the system becomes stable again as additional applied load is reacted by tension in the bars. However, in many structures, this snap-through behavior will most likely lead to failure.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-77e0c2c elementor-widget elementor-widget-image" data-id="77e0c2c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="381" height="156" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db1.png" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db1.png 381w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db1-300x123.png 300w" sizes="(max-width: 381px) 100vw, 381px" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-592e498 elementor-widget elementor-widget-text-editor" data-id="592e498" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Simple structure illustrating snap-through behavior</em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-5dacb21 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5dacb21" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-3169814" data-id="3169814" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-218d5fb elementor-widget elementor-widget-heading" data-id="218d5fb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Snap-Through Instability is Hard</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-18c6c61 elementor-widget elementor-widget-text-editor" data-id="18c6c61" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>As you can imagine, this type of snap-through instability is difficult to model and analyze. Take for example the plot below which shows the load-deflection curve for a hinged cylindrical shell undergoing snap-through buckling. Nonlinear methods using Newton’s method will try to trace a path that looks something like the dashed red line. Little problem: the actual deformation takes a completely different path as the structure undergoes a very sudden and quick “snap” behavior. Sure, it’s possible to wait long enough and luck into a solution. But even if a solution is found, we certainly can never visualize the snap through loads and displacements accurately using these analysis methods (notice that there are three possible solutions at the displacement defined by the red vertical line).</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-334cce1 elementor-widget elementor-widget-image" data-id="334cce1" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db3-p9lf3qqt681p3t6rvjyv4h9xxk02tskii8ic6v0kqo.png" title="db3" alt="db3" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-109ad49 elementor-widget elementor-widget-text-editor" data-id="109ad49" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Load-deflection curve for hinged cylindrical shell, typical nonlinear solver approach shown with dashed red line, vertical red line illustrates three possible solutions at the defined displacement [1]</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-ad7a93a elementor-widget elementor-widget-text-editor" data-id="ad7a93a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>How can we solve this?</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-e426bbd elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e426bbd" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cd8b5f1" data-id="cd8b5f1" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ee8c650 elementor-widget elementor-widget-heading" data-id="ee8c650" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Arc-Length Method to the Rescue</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-04a6864 elementor-widget elementor-widget-text-editor" data-id="04a6864" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The Arc-Length method offers an efficient and versatile scheme for solving these exceptionally difficult, nonlinear problems. What differentiates the arc-length method? Let’s start by looking at Newton’s method first with the figure below:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6c3d970 elementor-widget elementor-widget-image" data-id="6c3d970" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db4-p9lf3qqt6814n7uhjhaeldfxjpjvjwlbwr0i5whmgw.png" title="db4" alt="db4" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e597c38 elementor-widget elementor-widget-text-editor" data-id="e597c38" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Schematic representation of the Newton solver [2]</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-057f8e6 elementor-widget elementor-widget-text-editor" data-id="057f8e6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Notice that Newton’s method traces the nonlinear problem by computing the tangent stiffness. As the curve flattens (i.e. the tangent stiffness approaches zero), the step size used by the solver becomes extremely slow. Additionally, the method fails to solve the problem once a limit point is reached. This is exactly what happens in snap-through buckling. Now let’s compare this method to the arc-length method shown below. For the Arc-Length method, the increment is defined by a circle of radius Δl as shown.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a5c6a48 elementor-widget elementor-widget-image" data-id="a5c6a48" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db5-p9lf3qqt6814n7uhjhaeldfxjpjvjwlbwr0i5whmgw.png" title="db5" alt="db5" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9d0d754 elementor-widget elementor-widget-text-editor" data-id="9d0d754" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Schematic representation of the arc length solver [2]</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e2702bb elementor-widget elementor-widget-text-editor" data-id="e2702bb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The advantage of this is that multiple solutions can be found and the correct ones identified as the solution path is traversed. See the figure below for example. Additionally, the step size does not need to become infinitely small like it had to for Newton’s method when a horizontal tangent stiffness was encountered. This method enables us to solve complex problems that have both horizontal and vertical tangents.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6ce99e5 elementor-widget elementor-widget-image" data-id="6ce99e5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="768" height="330" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db6-768x330.png" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db6-768x330.png 768w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db6-300x129.png 300w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db6.png 888w" sizes="(max-width: 768px) 100vw, 768px" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2920a83 elementor-widget elementor-widget-text-editor" data-id="2920a83" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>The Arc-Length method in action [2]</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6f84682 elementor-widget elementor-widget-text-editor" data-id="6f84682" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>In this blog, I will walk you through snap-through analysis in Simcenter 3D with NX Nastran using the Arc-Length method.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-bfce39f elementor-widget elementor-widget-heading" data-id="bfce39f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Step 1: Define the Problem</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-701c374 elementor-widget elementor-widget-text-editor" data-id="701c374" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>We will be walking through the hinged cylindrical shell problem defined by the figure shown below and previously discussed.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e8dcaa4 elementor-widget elementor-widget-image" data-id="e8dcaa4" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db7-p9lf3qqt681p3t6rvjyv4h9xxk02tskii8ic6v0kqo.png" title="db7" alt="db7" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-0bce01f elementor-widget elementor-widget-text-editor" data-id="0bce01f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Problem definition for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-dff9638 elementor-widget elementor-widget-text-editor" data-id="dff9638" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The geometry and material behavior are shown on this figure.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-07692da elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="07692da" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-04fe6d9" data-id="04fe6d9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-4b1c3d0 elementor-widget elementor-widget-heading" data-id="4b1c3d0" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Step 2: Build the Finite Element Model</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-ecf1bf4 elementor-widget elementor-widget-text-editor" data-id="ecf1bf4" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The finite element model was built in Simcenter 3D using CQUAD4 elements. Only linear material properties were used. The figure below illustrates the model and boundary conditions.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6a1e3d9 elementor-widget elementor-widget-image" data-id="6a1e3d9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db8-p9lf3qr0hclh8q1qc50dfobzjfvfho4mn63crrkfa6.png" title="db8" alt="db8" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2ab3108 elementor-widget elementor-widget-text-editor" data-id="2ab3108" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Finite element model of hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e7678f0 elementor-widget elementor-widget-text-editor" data-id="e7678f0" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The blue lines represent the hinged boundary condition. The red arrow represents the applied load (0.6 kN).</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-1d8b29a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="1d8b29a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-93a6f4a" data-id="93a6f4a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-ef74ff4 elementor-widget elementor-widget-heading" data-id="ef74ff4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Step 3: Set up the Solution</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-46d8567 elementor-widget elementor-widget-text-editor" data-id="46d8567" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The analysis will be performed using NX Nastran solution sequence 106. The Arc-Length method will be used. The following nonlinear controls and arc-length controls were defined:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-5ae22e7 elementor-widget elementor-widget-image" data-id="5ae22e7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="417" height="915" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db9.png" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db9.png 417w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db9-137x300.png 137w" sizes="(max-width: 417px) 100vw, 417px" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c291713 elementor-widget elementor-widget-text-editor" data-id="c291713" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Nonlinear parameters for snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4baef02 elementor-widget elementor-widget-image" data-id="4baef02" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="393" height="416" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db10.png" class="attachment-medium_large size-medium_large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db10.png 393w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db10-283x300.png 283w" sizes="(max-width: 393px) 100vw, 393px" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b1c81e6 elementor-widget elementor-widget-text-editor" data-id="b1c81e6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Arc-Length method parameters for snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6e5b1f2 elementor-widget elementor-widget-text-editor" data-id="6e5b1f2" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>It should be noted that these parameters need to be defined for both the solution sequence as well as the subcase. Finally, large displacements need to be enabled:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a1d19cf elementor-widget elementor-widget-image" data-id="a1d19cf" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db11-p9lf3qqynkfoiltk7vqb27tgk78aev9tppgcl3n3q0.png" title="db11" alt="db11" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-34f5671 elementor-widget elementor-widget-text-editor" data-id="34f5671" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Enabling large displacements in Simcenter 3D</em></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-99ddf0a elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="99ddf0a" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-f311d74" data-id="f311d74" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-bb8fd50 elementor-widget elementor-widget-heading" data-id="bb8fd50" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Step 4: Solve and Post-Process</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c65fc51 elementor-widget elementor-widget-text-editor" data-id="c65fc51" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Now comes the fun part: reviewing the results.</p><p>First, let’s look at an animation of the snap-through behavior.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e87ba72 elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="e87ba72" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtu.be\/CoQqlBkiwCQ&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-62682c9 elementor-widget elementor-widget-text-editor" data-id="62682c9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Animation showing snap-through buckling of hinged cylindrical shell</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-7454f3f elementor-widget elementor-widget-text-editor" data-id="7454f3f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Note that the animation is at 10% model scale. We would also like to look at the deflection and applied load vs iteration.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9b52771 elementor-widget elementor-widget-image" data-id="9b52771" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db12-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjjwe.png" title="db12" alt="db12" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a4a1fec elementor-widget elementor-widget-text-editor" data-id="a4a1fec" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Displacement vs. iteration for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-95a904a elementor-widget elementor-widget-image" data-id="95a904a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db13-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjjzq.png" title="db13" alt="db13" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-b6c8079 elementor-widget elementor-widget-text-editor" data-id="b6c8079" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Applied load vs. iteration for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-fbef491 elementor-widget elementor-widget-text-editor" data-id="fbef491" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Finally, we would like to reproduce the plot from the reference. To do this, we will plot displacement vs. load in Simcenter 3D. We will first save the two graphs as Afu’s. Afu’s allow us to store XY data on our computer so that we can reference it when we create additional plots.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6ff1971 elementor-widget elementor-widget-image" data-id="6ff1971" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="279" height="208" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db14.png" class="attachment-large size-large" alt="" loading="lazy" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-3545555 elementor-widget elementor-widget-text-editor" data-id="3545555" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Exporting a graph to Afu in Simcenter 3D</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-71dd3b7 elementor-widget elementor-widget-text-editor" data-id="71dd3b7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Next, we create a Two Function plot as shown.</p><p> </p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-be4daff elementor-widget elementor-widget-image" data-id="be4daff" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db15-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjk5u.png" title="db15" alt="db15" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-70b476c elementor-widget elementor-widget-text-editor" data-id="70b476c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Creating a Two Function plot in Simcenter 3D</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-23755da elementor-widget elementor-widget-text-editor" data-id="23755da" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>The result is shown below. The general behavior appears to match closely with what we expected.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-c6a0cf2 elementor-widget elementor-widget-image" data-id="c6a0cf2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db16-p9lf3qr139zetfggdk3q85u5v6r56lqwabn0tzjkic.png" title="db16" alt="db16" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-691aedf elementor-widget elementor-widget-text-editor" data-id="691aedf" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Two Function plot of force vs displacement for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2659f27 elementor-widget elementor-widget-text-editor" data-id="2659f27" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>This plot is shown overlaid above the original plot below:</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-6a90604 elementor-widget elementor-widget-image" data-id="6a90604" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img src="https://www.m4-engineering.com/wp-content/uploads/elementor/thumbs/db17-p9lf3qqt681p3t6rvjyv4h9xxk02tskii8ic6v0kqo.png" title="db17" alt="db17" />														</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8f8916b elementor-widget elementor-widget-text-editor" data-id="8f8916b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p><em>Comparison of NX Nastran results vs. literature for hinged cylindrical shell snap-through problem</em></p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e879364 elementor-widget elementor-widget-text-editor" data-id="e879364" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Notice that there is very good agreement with the expected result. We were able to accurately capture snap-through buckling behavior for a hinged cylindrical shell.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-ef20852 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="ef20852" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-0dc46d9" data-id="0dc46d9" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-0446c04 elementor-widget elementor-widget-heading" data-id="0446c04" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h1 class="elementor-heading-title elementor-size-default">Summary</h1>		</div>
+				</div>
+				<div class="elementor-element elementor-element-790ca0e elementor-widget elementor-widget-text-editor" data-id="790ca0e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Problems that exhibit snap-through buckling can be very difficult to solve. As such, they require a different solution approach. The Arc-Length method is perfectly suited for these types of problems. In this blog we walked through a snap-through buckling analysis in Simcenter 3D with NX Nastran. We were able to solve a difficult nonlinear problem and match literature very well.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-b33a79d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b33a79d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-68d8f6b" data-id="68d8f6b" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-62ed3cc elementor-widget elementor-widget-image" data-id="62ed3cc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-image">
+												<img width="1024" height="680" src="https://www.m4-engineering.com/wp-content/uploads/2020/12/db18-1024x680.jpg" class="attachment-large size-large" alt="" loading="lazy" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/12/db18-1024x680.jpg 1024w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db18-300x199.jpg 300w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db18-768x510.jpg 768w, https://www.m4-engineering.com/wp-content/uploads/2020/12/db18.jpg 1237w" sizes="(max-width: 1024px) 100vw, 1024px" />														</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-68b9c90" data-id="68b9c90" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-f3b4e5d elementor-widget elementor-widget-heading" data-id="f3b4e5d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Written by Vitaliy Rezekulov</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-24736d5 elementor-widget elementor-widget-text-editor" data-id="24736d5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Vitaliy Rezekulov is a Senior Engineer with a background in structural analysis. He has worked on some interesting linear and nonlinear problems. Outside of work he enjoys spending time with his family and friends.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-5deec84 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5deec84" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-4783490" data-id="4783490" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-907c1a9 elementor-widget elementor-widget-text-editor" data-id="907c1a9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h3>References</h3><p>[1] <a href="https://www.academia.edu/12783579/Solution_techniques_for_non_linear_finite_element_problems">https://www.academia.edu/12783579/Solution_techniques_for_non_linear_finite_element_problems</a></p><p>[2] <a href="https://scholar.harvard.edu/files/vasios/files/ArcLength.pdf">https://scholar.harvard.edu/files/vasios/files/ArcLength.pdf</a></p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/snap-through-buckling-in-simcenter-3d/">Snap-Through Buckling in Simcenter 3D</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

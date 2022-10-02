@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>dynamic systems Archives - M4 Engineering</title>
+	<atom:link href="https://www.m4-engineering.com/tag/dynamic-systems/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.m4-engineering.com/tag/dynamic-systems/</link>
+	<description>Engineering</description>
+	<lastBuildDate>Thu, 10 Dec 2020 18:51:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
+
+<image>
+	<url>https://www.m4-engineering.com/wp-content/uploads/2021/01/cropped-logo1_png_2020-32x32.png</url>
+	<title>dynamic systems Archives - M4 Engineering</title>
+	<link>https://www.m4-engineering.com/tag/dynamic-systems/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Dynamic Stability Derivatives Using CFD</title>
+		<link>https://www.m4-engineering.com/dynamic-stability-derivatives-using-cfd/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Wed, 08 Jul 2020 20:09:00 +0000</pubDate>
+				<category><![CDATA[Technical Blog]]></category>
+		<category><![CDATA[CFD]]></category>
+		<category><![CDATA[Derivatives]]></category>
+		<category><![CDATA[dynamic systems]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=3606</guid>
+
+					<description><![CDATA[<p>While it is relatively simple and commonplace to leverage CFD to determine static stability characteristics of an aircraft such as CLα &#160;and CMα , it is more challenging to determine dynamic stability characteristics. Here we will demonstrate how CFD can be used to estimate the pitch damping derivative (Cmq&#160;of an aircraft. For this study, we [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/dynamic-stability-derivatives-using-cfd/">Dynamic Stability Derivatives Using CFD</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="3606" class="elementor elementor-3606">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-b349ac1 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="b349ac1" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-76e06fe" data-id="76e06fe" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-d20b70f elementor-widget elementor-widget-text-editor" data-id="d20b70f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>While it is relatively simple and commonplace to leverage CFD to determine static stability characteristics of an aircraft such as <em>C<sub>L<sub>α </sub> </sub></em>  and <em>C<sub>M<sub>α </sub> </sub></em>, it is more challenging to determine dynamic stability characteristics. Here we will demonstrate how CFD can be used to estimate the pitch damping derivative (<em>C<sub>m<sub>q</sub></sub></em> of an aircraft. For this study, we will be analyzing the eFlyer 2 which is an all-electric aircraft being developed by <a href="https://byeaerospace.com/electric-airplane/">Bye Aerospace</a>.</p><p>Challenges:</p><ul><li>Modeling an aircraft in a steady maneuver using CFD</li><li>Predicting aerodynamics in non-inertial reference frames</li></ul><p>Values:</p><ul><li>Determining dynamic stability characteristics of an aircraft</li><li>Higher fidelity aerodynamic database modeling</li></ul><h1><strong>What is Pitch Damping?</strong></h1><p>Physically, pitch damping is the tendency for the aircraft to produce a restoring pitching moment when subjected to a pitch rate <em>q*</em> in rad/s. It plays a major role in longitudinal dynamic stability of an aircraft through damping of the short period and phugoid modes. Mathematically, this is represented by <em>C<sub>m<sub>q</sub></sub></em> which is the change in pitching moment due to a <em>non-dimensional</em> pitch rate <em>q</em> defined by</p><div><img loading="lazy" class="aligncenter size-full wp-image-3609" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq1.jpg" alt="" width="176" height="70" /></div><div><p>While in a constant pitch rate maneuver it is the aircraft that is actually moving, the perceived effect in the aircraft body frame is that of a curved freestream flow as depicted below.</p><p><img loading="lazy" class="aligncenter size-full wp-image-3616" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping2.png" alt="" width="828" height="356" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping2.png 828w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping2-300x129.png 300w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping2-768x330.png 768w" sizes="(max-width: 828px) 100vw, 828px" /></p><p>The result is a change in the effective angle of attack of the lifting surfaces due to the pitch rate. Inspection of the flowfield geometry quickly reveals that the tail will see the highest change in α due to the pitch rate.</p><p><img loading="lazy" class="aligncenter wp-image-3617" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping3-300x235.png" alt="" width="500" height="391" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping3-300x235.png 300w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping3.png 643w" sizes="(max-width: 500px) 100vw, 500px" /></p><h1><strong>Estimating Pitch Damping</strong></h1><p>The change in effective angle of attack can be estimated using simple geometric relations to be</p><p><img loading="lazy" class="aligncenter size-full wp-image-3610" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq2.jpg" alt="" width="228" height="78" /></p><p>where<em> l</em><sub>T</sub> is the distance from the aerodynamic center of the tail to the CG. With the change in effective angle of attack known, the lift and ultimately the pitching moment due to pitch rate can be estimated simply from the aircraft geometry.</p><p><img loading="lazy" class="aligncenter size-full wp-image-3611" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq3.jpg" alt="" width="498" height="78" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq3.jpg 498w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq3-300x47.jpg 300w" sizes="(max-width: 498px) 100vw, 498px" /></p><p>The engineer should be aware that large values of <em>q</em> can produce values of Δα that exceed the linear region of the lift curve. For this reason, it is advisable to limit the non-dimensional pitch rate such that the change in effective angle of attack remains small – in this case we use <em>q</em> = 0.01.</p><p>The lift curve slope of the tail is estimated by adjusting the 2D lift curve slope with finite span effects.</p><p><img loading="lazy" class="aligncenter size-full wp-image-3612" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq4.jpg" alt="" width="383" height="87" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq4.jpg 383w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq4-300x68.jpg 300w" sizes="(max-width: 383px) 100vw, 383px" /></p><p>Finally, the pitch damping can be estimated with the following:</p><p><img loading="lazy" class="aligncenter size-full wp-image-3613" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq5.jpg" alt="" width="624" height="148" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq5.jpg 624w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq5-300x71.jpg 300w" sizes="(max-width: 624px) 100vw, 624px" /></p></div><h1><strong>Modeling a Pitch Maneuver Using CFD</strong></h1><p>Modeling any dynamic maneuver in CFD is typically a non-trivial task. However, for a constant rate maneuver such as a constant pitch rate pull-up, clever use of non-inertial reference frames greatly simplifies this problem. Solvers such as Star-CCM+ and FUN3D &#8211; for example, possess this capability. By solving the Navier-Stokes equations in a coordinate system that is rotating at a rate of  <em>q</em>* rad/s centered at the center of rotation of the pull-up – that is, a distance R = V⁄q* from the CG, the curved freestream flow from the maneuver can be simulated.</p><p>Starting with a mesh of the eFlyer 2 aircraft,</p><p><img loading="lazy" class="aligncenter wp-image-3618" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping4-300x160.png" alt="" width="600" height="319" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping4-300x160.png 300w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping4-1024x545.png 1024w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping4-768x408.png 768w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping4.png 1100w" sizes="(max-width: 600px) 100vw, 600px" /></p><p>the analysis is performed in 2 steps: 1) perform a simulation at 0 pitch rate and angle of attack to determine C<sub>L<sub>o</sub></sub> and C<sub>m<sub>o</sub></sub>, 2) perform a simulation at a known pitch rate (in this case  using a non-inertial reference frame to determine C<sub>L</sub> and C<sub>m</sub> during the maneuver.</p><p>Inspecting the flowfield for the pitch rate simulation it is apparent that using the non-inertial reference frame does indeed curve the flowfield as desired.</p><p><img loading="lazy" class="aligncenter wp-image-3619" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping5-1024x545.jpg" alt="" width="800" height="425" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping5-1024x545.jpg 1024w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping5-300x160.jpg 300w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping5-768x408.jpg 768w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping5.jpg 1322w" sizes="(max-width: 800px) 100vw, 800px" /></p><p>Finally, we take the forces and moments from both simulations and arrive at the CFD prediction for <em>C<sub>L<sub>q</sub></sub></em> and <em>C<sub>m<sub>q</sub></sub></em>.</p><p><img loading="lazy" class="aligncenter size-full wp-image-3614" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq6.jpg" alt="" width="476" height="134" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq6.jpg 476w, https://www.m4-engineering.com/wp-content/uploads/2020/07/pitchdamping_eq6-300x84.jpg 300w" sizes="(max-width: 476px) 100vw, 476px" /></p><p>Recall that the preliminary estimation of the aerodynamic effects due to pitch rate only accounted for the effect on the tail and not on the fuselage or wing which were captured in the CFD which explains the differences in <em>C<sub>L<sub>q</sub></sub></em>. However, since the lift on the tail will dominate the pitching moment, the pitch damping predicted by the hand calculation and CFD match very closely.</p><h1><strong>Summary</strong></h1><p>Pitch damping plays a critical role in the longitudinal dynamics of an aircraft. Estimation of pitch damping using CFD can be performed by leveraging non-inertial reference frames within a CFD solution and is easily verified by hand calculation.</p><p><img loading="lazy" class="alignleft wp-image-3608 size-thumbnail" src="https://www.m4-engineering.com/wp-content/uploads/2020/07/eddieszwabowski-e1594230618126-150x150.jpg" alt="" width="150" height="150" /></p><h1><strong>Written by Eddie Szwabowski</strong></h1><p>Eddie Szwabowski is an Aerospace Engineer with a background in Aerodynamics, CFD, and programming.  Outside of work he enjoys playing video games, shooting guns, and eating steak.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/dynamic-stability-derivatives-using-cfd/">Dynamic Stability Derivatives Using CFD</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Efficient Simulation of Structural Dynamic Systems with Discrete Nonlinearities (2011)</title>
+		<link>https://www.m4-engineering.com/efficient-simulation-of-structural-dynamic-systems-with-discrete-nonlinearities-2011/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Thu, 07 Apr 2011 13:53:02 +0000</pubDate>
+				<category><![CDATA[Conference Publications]]></category>
+		<category><![CDATA[dynamic systems]]></category>
+		<category><![CDATA[simulation]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=4360</guid>
+
+					<description><![CDATA[<p>Authors Daniel Hammerand, Kevin Roughen, Jinhua Huang, Daniel Stuewe Introduction Dynamic loading environments often involve complex loading and boundary conditions. For the case of externally mounted aircraft stores, qualification testing involves simulating this environment with relatively simple test fixtures and load application shakers. Simulation using Finite Element Analysis (FEA) is used to ensure that the [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/efficient-simulation-of-structural-dynamic-systems-with-discrete-nonlinearities-2011/">Efficient Simulation of Structural Dynamic Systems with Discrete Nonlinearities (2011)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="4360" class="elementor elementor-4360">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-605c39f8 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="605c39f8" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-1dbec6fd" data-id="1dbec6fd" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-2ea2ee9b elementor-widget elementor-widget-heading" data-id="2ea2ee9b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Authors</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-409fe3a7 elementor-widget elementor-widget-text-editor" data-id="409fe3a7" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Daniel Hammerand, Kevin Roughen, Jinhua Huang, Daniel Stuewe</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-6780b480 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="6780b480" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-141f8f2a" data-id="141f8f2a" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-3725b8c5 elementor-widget elementor-widget-heading" data-id="3725b8c5" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Introduction</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-32170c80 elementor-widget elementor-widget-text-editor" data-id="32170c80" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Dynamic loading environments often involve complex loading and boundary conditions. For the case of externally mounted aircraft stores, qualification testing involves simulating this environment with relatively simple test fixtures and load application shakers. Simulation using Finite Element Analysis (FEA) is used to ensure that the test conditions are representative of the service environment. In this development, a method for efficiently simulating test and service conditions is presented. The component mode synthesis method is used to significantly reduce the computational requirements of solving nonlinear store vibration problems while retaining a straightforward model structure at user specified<br>boundary locations. While the component mode synthesis method provides an efficient coordinate transformation, the physical meaning of the degrees of freedom at the boundary are preserved. Nonlinear stiffness functions at the boundary degrees of freedom are added after the linear potion of the model has been reduced. The resulting set of nonlinear equations is integrated in time. Accuracy and computational expense are evaluated through comparison to full-order nonlinear solutions from existing commercial software.</p>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-9e6cb88 elementor-widget elementor-widget-text-editor" data-id="9e6cb88" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<h1><span style="text-decoration: underline;"><a href="https://www.m4-engineering.com/wp-content/uploads/2020/10/NLVIB_SDM52.pdf">View Publication</a></span></h1>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/efficient-simulation-of-structural-dynamic-systems-with-discrete-nonlinearities-2011/">Efficient Simulation of Structural Dynamic Systems with Discrete Nonlinearities (2011)</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

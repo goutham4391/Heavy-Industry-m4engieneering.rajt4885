@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Linear analysis Archives - M4 Engineering</title>
+	<atom:link href="https://www.m4-engineering.com/tag/linear-analysis/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.m4-engineering.com/tag/linear-analysis/</link>
+	<description>Engineering</description>
+	<lastBuildDate>Wed, 13 May 2020 17:32:08 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
+
+<image>
+	<url>https://www.m4-engineering.com/wp-content/uploads/2021/01/cropped-logo1_png_2020-32x32.png</url>
+	<title>Linear analysis Archives - M4 Engineering</title>
+	<link>https://www.m4-engineering.com/tag/linear-analysis/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Nonlinear Stresses from Linear FEA</title>
+		<link>https://www.m4-engineering.com/nonlinear-stresses-from-linear-fea/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Wed, 13 May 2020 17:32:06 +0000</pubDate>
+				<category><![CDATA[Technical Blog]]></category>
+		<category><![CDATA[Linear analysis]]></category>
+		<category><![CDATA[Linear FEA]]></category>
+		<category><![CDATA[Nastran]]></category>
+		<category><![CDATA[Nonlinear analysis]]></category>
+		<category><![CDATA[Nonlinear stresses]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=2987</guid>
+
+					<description><![CDATA[<p>Learn how a Nastran linear-elastic analysis can be corrected to take into account nonlinear material behavior. Take advantage of the benefits of a linear analysis without sacrificing precision. Challenges: Time limitations Model size and computational resources Large number of load cases Values: Capture nonlinear behavior using linear FEA results Quick to run and iterate on [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/nonlinear-stresses-from-linear-fea/">Nonlinear Stresses from Linear FEA</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="2987" class="elementor elementor-2987">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-8d1c2ca elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="8d1c2ca" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-cfe0fdb" data-id="cfe0fdb" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-359666c elementor-widget elementor-widget-text-editor" data-id="359666c" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>Learn how a Nastran linear-elastic analysis can be corrected to take into account nonlinear material behavior. Take advantage of the benefits of a linear analysis without sacrificing precision.</p><p>Challenges:</p><ul><li>Time limitations</li><li>Model size and computational resources</li><li>Large number of load cases</li></ul><p>Values:</p><ul><li>Capture nonlinear behavior using linear FEA results</li><li>Quick to run and iterate on</li><li>Easily incorporate optimization into the design process</li><li>Can create scripts to programmatically compute nonlinear stresses</li></ul><h2><strong>Linear-Elastic Analysis</strong></h2><p>In performing structural analysis, it is always preferable to start simple and add complexity and detail as needed. As an example, when performing a static structural analysis, the starting point should be a linear solution (SOL 101).</p><p>One common simplification is to use a linear material model. A linear-elastic analysis constrains the finite element solution to the linear portion of a material’s stress-strain curve. This region is shown below. In this region, the material is accurately characterized by the relationship <strong>σ = Eε</strong>.</p><p><img loading="lazy" class="aligncenter wp-image-2995 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Linear-Elastic-Analysis-e1588868463703.png" alt="Linear Elastic Analysis" width="600" height="375" /></p><p>However, reality is highly non-linear. Designing structures to be within the linear-elastic region of their stress-strain curve would significantly limit the design space. What happens when the stress in a component is outside of this linear region? Commonly local stress concentrations result in small regions in a structure having large stresses. Should these local regions result in redesign or added material (weight)?</p><p>To take into account this nonlinear region, a nonlinear finite element analysis could be set up and run. In Simcenter 3D this is very easy to do. However, caution must be exercised. In certain instances, running a non-linear solution is both unnecessary and prohibitively expensive (in terms of engineering and computational time). What can be done in these cases? That is where the Neuber plasticity correction comes in. In the example below, the process for determining the nonlinear stress from a linear FEA analysis will be presented. Note that the Neuber plasticity correction applies to regions of local stress concentration. This method is not intended for gross plasticity (plastic bending, etc.).</p><h2>Step 1: Build a Finite Element Model</h2><p>A simple geometry has been created in NX. This geometry was then used to construct a finite element model. The key dimensions of the part are shown below.</p><p><img loading="lazy" class="aligncenter wp-image-2991 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Finite-Element-Model-e1588868500100.jpg" alt="Finite Element Model" width="600" height="191" /></p><p>An axial load of 8,000 lbf was then applied to the model and a linear-elastic solution was run using Simcenter Nastran (formerly known as NX Nastran).  <a href="https://www.m4-engineering.com/engineering-software/" target="_blank" rel="noopener"><em>Note that M4 Engineering is an officially licensed reseller of Simcenter Nastran.</em></a></p><h2>Step 2: Review the Linear-Elastic Result</h2><p>Once the linear-elastic model has been run, the component stresses can be checked. In this case, the geometry is simple and enables comparison with standard hand calculation methods.</p><p>Peterson’s Stress Concentration Factors was used for this purpose. The peak stress at the hole was determined from the following chart:</p><p><img loading="lazy" class="aligncenter wp-image-2994 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Linear-Elastic-Results-e1588868541622.png" alt="Linear Elastic Results" width="600" height="763" /></p><p>With <strong><em>d/H</em> </strong>equal to 0.25, <strong><em>K<sub>tg</sub></em></strong> is found to be 3.24. The maximum stress can then be found by multiplying the nominal stress away from the bolt hole by this stress concentration factor. The nominal stress is found to be:</p><p><img loading="lazy" class="aligncenter size-full wp-image-3004" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Nominal-Stress-Equation-2.png" alt="Nominal Stress Equation" width="355" height="71" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/05/Nominal-Stress-Equation-2.png 355w, https://www.m4-engineering.com/wp-content/uploads/2020/05/Nominal-Stress-Equation-2-300x60.png 300w" sizes="(max-width: 355px) 100vw, 355px" /></p><p>The max principal stress computed using the finite element model is 51,179 psi.</p><p><img loading="lazy" class="aligncenter wp-image-2992 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Linear-Elastic-Results-2-e1588868560890.png" alt="Maximum Principal Stress" width="600" height="299" /></p><p>This is within two percent of the hand calculation. The von Mises stress computed by the finite element model is 52,342 psi and is shown below.</p><p><img loading="lazy" class="aligncenter wp-image-2993 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/linear-Elastic-Results-3-e1588868594954.png" alt="von Mises Stress" width="600" height="301" /></p><p>Note that for the 6061-T6 material that was chosen for this plate, 52 ksi is well above both the yield and ultimate strength of the material, 41.0 ksi and 42.5 ksi respectively . Further analysis is required.</p><h2>Step 3: Correct Linear-Elastic Stress</h2><p>The simplest approach to determine whether or not this linear-elastic stress is an issue would be to perform a hand calculation using the Neuber plasticity correction. This method is both accurate and quick. The Neuber correction allows determination of total strain (elastic + plastic) and nonlinear stress using a hand analysis method. This method is especially helpful during the initial design / optimization phase of product development. Instead of iterating multiple times to solve a single load case, multiple designs and load cases can be considered. This can cut a significant portion of development time out of the design cycle!</p><p>To perform the Neuber correction, the following must be used:</p><p><img loading="lazy" class="aligncenter size-full wp-image-3003" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Neuber-Calculation.png" alt="Neuber Correction CaLCULATION" width="269" height="47" /></p><p>In other words, the product of the linear-elastic stress and strain remains constant. As such, a point on the material stress strain curve that meets this requirement can be found.</p><p>The nonlinear stress at different strain levels can be determined while holding the above product constant. These stress-strain sets will result in the dotted blue line shown in the figure below. The intersection of the dotted blue line with the stress-strain curve is the nonlinear stress state.</p><p><img loading="lazy" class="aligncenter wp-image-2990 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Correct-Linear-Elastic-Stress-e1588868618183.png" alt="Correct Linear Elastic Stress" width="600" height="375" /></p><p>The nonlinear stress computed using this approach is 41.489 ksi. This is slightly above the 0.2% offset yield strength of the material but is significantly less alarming than 52 ksi.</p><h2>Step 4: Compare Result to Nonlinear Analysis</h2><p>The same example problem was run using a nonlinear material model in Nastran solution 106. The nonlinear von Mises stress from this analysis is presented below:</p><p><img loading="lazy" class="aligncenter wp-image-2996 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Nonlinear-Anlaysis-Comparison-e1588868658244.png" alt="" width="600" height="297" /></p><p>The peak stress is 40.735 ksi. The stress computed using the Neuber plasticity correction is within 2% of this result. Depending on the model size and number of load cases, the full-fledged nonlinear solution could have taken days to run. This correction took 15 minutes.</p><h2>Summary</h2><p>The rule of thumb in stress analysis is start simple and add complexity. A linear-elastic model is often sufficient for many problems. When a linear-elastic model stress exceeds the linear portion of the stress-strain curve at a local stress concentration, the Neuber plasticity correction can be used to determine the effect of material nonlinearity. This method is preferable to a full-fledged nonlinear analysis in many instances, such as optimization, large model sizes, and large numbers of load cases.</p><h2><strong><img loading="lazy" class="alignleft wp-image-2998 size-medium" src="https://www.m4-engineering.com/wp-content/uploads/2020/05/Vitaliy-Rezekulov-300x199.jpg" alt="" width="300" height="199" />Written by Vitaliy Rezekulov</strong></h2><p>Vitaliy Rezekulov is a Senior Engineer with a background in structural analysis. He has worked on some interesting linear and nonlinear problems. Outside of work he enjoys playing board games and soccer with friends.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/nonlinear-stresses-from-linear-fea/">Nonlinear Stresses from Linear FEA</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

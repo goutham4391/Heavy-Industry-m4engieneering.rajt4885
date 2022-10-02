@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>STAR_CCM+ Archives - M4 Engineering</title>
+	<atom:link href="https://www.m4-engineering.com/tag/star_ccm/feed/" rel="self" type="application/rss+xml" />
+	<link>https://www.m4-engineering.com/tag/star_ccm/</link>
+	<description>Engineering</description>
+	<lastBuildDate>Thu, 10 Dec 2020 17:07:03 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.0.2</generator>
+
+<image>
+	<url>https://www.m4-engineering.com/wp-content/uploads/2021/01/cropped-logo1_png_2020-32x32.png</url>
+	<title>STAR_CCM+ Archives - M4 Engineering</title>
+	<link>https://www.m4-engineering.com/tag/star_ccm/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Simcenter Star-CCM+ Adaptive Mesh Refinement Case Study: Cylinder in Crossflow</title>
+		<link>https://www.m4-engineering.com/simcenter-star-ccm-adaptive-mesh-refinement/</link>
+		
+		<dc:creator><![CDATA[Manderlee Baker]]></dc:creator>
+		<pubDate>Wed, 09 Sep 2020 17:40:00 +0000</pubDate>
+				<category><![CDATA[Technical Blog]]></category>
+		<category><![CDATA[3D]]></category>
+		<category><![CDATA[CFD]]></category>
+		<category><![CDATA[computational fluid dynamics]]></category>
+		<category><![CDATA[flow solver]]></category>
+		<category><![CDATA[fluid dynamics]]></category>
+		<category><![CDATA[grid]]></category>
+		<category><![CDATA[mesh]]></category>
+		<category><![CDATA[STAR_CCM+]]></category>
+		<guid isPermaLink="false">https://www.m4-engineering.com/?p=3894</guid>
+
+					<description><![CDATA[<p>You can reduce simulation time by using Adaptive Mesh Refinement. Adaptive Mesh Refinement (AMR) is a dynamic meshing technique that can coarsen or refine elements based on user-defined criteria computed during the simulation. This functionality enables the analyst to run more simulations faster and drastically reduce simulation time. Challenges Performing a CFD simulation requires trade-offs [&#8230;]</p>
+<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/simcenter-star-ccm-adaptive-mesh-refinement/">Simcenter Star-CCM+ Adaptive Mesh Refinement Case Study: Cylinder in Crossflow</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[		<div data-elementor-type="wp-post" data-elementor-id="3894" class="elementor elementor-3894">
+						<div class="elementor-inner">
+				<div class="elementor-section-wrap">
+									<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-4e142be elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="4e142be" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-204fef2" data-id="204fef2" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-89b4d6a elementor-widget elementor-widget-text-editor" data-id="89b4d6a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<p>You can reduce simulation time by using Adaptive Mesh Refinement. Adaptive Mesh Refinement (AMR) is a dynamic meshing technique that can coarsen or refine elements based on user-defined criteria computed during the simulation. This functionality enables the analyst to run more simulations faster and drastically reduce simulation time.</p><h2><strong>Challenges</strong></h2><ul><li>Performing a CFD simulation requires trade-offs between solution accuracy and run-time.</li><li>The results of the simulation will contribute to the necessity of mesh refinement.</li><li>CFD has high computational requirements.</li></ul><h2><strong>Values</strong></h2><div><ul><li>Adaptive mesh refinement enables the use of a smaller mesh without accuracy degradation. Smaller meshes have reduced simulation time and are less resource intensive.</li><li>Simcenter STAR-CCM+ results agree well with experimental testing.  Banner AMR allows you to solve larger problems with lower computational resources.</li><li>AMR allows you to solve <strong>more complex</strong> problems with lower computational resources</li></ul><h2><strong>Introduction</strong></h2><p>Flow over a cylinder is a classical case study in fluid dynamics. At low values of the Reynolds number, the flow is laminar with smooth, predictable fluid motion. In contrast, at high values the flow becomes irregular with fluid mixing. Recall that the Reynolds number is a ratio of inertial forces to viscous forces, expressed as:</p><center><img loading="lazy" class="alignnone size-full wp-image-3931" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/Capture2.jpg" alt="" width="185" height="74" /></center><p>At Reynolds number of approximately 100, a special vortex shedding effect occurs where vortices form at the trailing edge of the cylinder and detach from the body periodically, alternating at the top and bottom. This physical phenomenon results in a von Karman vortex street created in the wake of the body, which will be the focus of adaptive mesh refinement.</p><h2>Model Setup</h2><p><img loading="lazy" class="aligncenter wp-image-3899 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/MeshRefinement.png" alt="" width="827" height="333" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/09/MeshRefinement.png 827w, https://www.m4-engineering.com/wp-content/uploads/2020/09/MeshRefinement-300x121.png 300w, https://www.m4-engineering.com/wp-content/uploads/2020/09/MeshRefinement-768x309.png 768w" sizes="(max-width: 827px) 100vw, 827px" /><b><i></i></b></p><center><b><i>Model dimensions. Thickness 0.04 meters not shown.</i></b></center><center><b><i> </i></b></center></div><div><p>An infinitely long cylinder is placed in a constant velocity flowfield with the fluid passing over the circular cross-section. This is enforced by symmetric boundary conditions at the faces orthogonal to the depth axis of the page. The upper and lower surfaces are assigned wall boundaries in addition to a 0.15 m/s velocity inlet and a static pressure outlet. For the sake of demonstrating the adaptive mesh refinement method, the model is created in 3D.  The analysis at hand could normally be performed in 2D, but adaptive mesh refinement is limited to 3D elements. Additionally, it is important to note that adaptive mesh refinement cannot recreate geometric features of the model, which forces a lower bound on the initial mesh quality. In other words, the starting mesh must capture the pertinent geometric features. Also, the mesh refinement scheme will not produce a mesh that is less refined than what is initially provided, requiring the user to make their best judgments. Here, the region around the cylinder is meshed with prism layers to capture the viscous effects of the flow. On the other hand, the wake region is very coarse to allow for mesh refinement to occur.</p><p><img loading="lazy" class="aligncenter wp-image-3901 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/StartingMesh.png" alt="" width="712" height="460" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/09/StartingMesh.png 712w, https://www.m4-engineering.com/wp-content/uploads/2020/09/StartingMesh-300x194.png 300w" sizes="(max-width: 712px) 100vw, 712px" /></p><center><b><i>Starting mesh. The cylinder must have adequate mesh resolution prior to refinement to accurately capture the geometry.</i></b></center></div><div><p><img loading="lazy" class="wp-image-3896 size-full" style="font-size: 14px;" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/FinalMesh.png" alt="" width="944" height="386" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/09/FinalMesh.png 944w, https://www.m4-engineering.com/wp-content/uploads/2020/09/FinalMesh-300x123.png 300w, https://www.m4-engineering.com/wp-content/uploads/2020/09/FinalMesh-768x314.png 768w" sizes="(max-width: 944px) 100vw, 944px" /></p><center><em><strong>Final mesh. Wake region is captured and refined by the adaptive mesh criterion.</strong></em></center><h2><strong>Adaptivity Criterion</strong></h2><p><span style="font-size: 14px;">In order to refine the mesh, the solver needs to have some criteria on when to either coarsen or refine an element. For this example, change in vorticity is ideal for tracking the vortex sheet as it transverses downstream. The value is scaled by the element size to ensure that there is a bias to refine larger elements and keep or coarsen smaller elements. The expression is then entered as:<br /></span></p><p><img loading="lazy" class="wp-image-3903 size-full aligncenter" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/vorticityvector.png" alt="" width="406" height="25" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/09/vorticityvector.png 406w, https://www.m4-engineering.com/wp-content/uploads/2020/09/vorticityvector-300x18.png 300w" sizes="(max-width: 406px) 100vw, 406px" /></p><p class="MsoNormal">For those unfamiliar with the STAR-CCM Java syntax, the variables and their information is provided by expanding the definition of the field function.<img loading="lazy" class="aligncenter wp-image-3898 size-full" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/JavaSyntax.png" alt="" width="660" height="47" srcset="https://www.m4-engineering.com/wp-content/uploads/2020/09/JavaSyntax.png 660w, https://www.m4-engineering.com/wp-content/uploads/2020/09/JavaSyntax-300x21.png 300w" sizes="(max-width: 660px) 100vw, 660px" /></p><h2><strong>Results</strong></h2></div>					</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-3101d8d elementor-aspect-ratio-169 elementor-widget elementor-widget-video" data-id="3101d8d" data-element_type="widget" data-settings="{&quot;youtube_url&quot;:&quot;https:\/\/youtu.be\/3Idvpegw5Is&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;video_type&quot;:&quot;youtube&quot;,&quot;controls&quot;:&quot;yes&quot;,&quot;aspect_ratio&quot;:&quot;169&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-wrapper elementor-fit-aspect-ratio elementor-open-inline">
+			<div class="elementor-video"></div>		</div>
+				</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+				<section data-particle_enable="false" data-particle-mobile-disabled="false" class="elementor-section elementor-top-section elementor-element elementor-element-797fb88 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="797fb88" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+							<div class="elementor-row">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-a6f4f06" data-id="a6f4f06" data-element_type="column">
+			<div class="elementor-column-wrap elementor-element-populated">
+							<div class="elementor-widget-wrap">
+						<div class="elementor-element elementor-element-cd46b70 elementor-widget elementor-widget-text-editor" data-id="cd46b70" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+								<div class="elementor-text-editor elementor-clearfix">
+				<div style="font-variant-ligatures: normal; font-variant-caps: normal; font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif; font-size: 14px;"><center><em><strong>V</strong></em><i><strong>o</strong><b>n Karman vortex street, Re = 150. Vortex is shed from the cylinder with dynamic wake refinement.</b></i></center><p style="font-weight: 400; font-style: normal; font-size: 14px;">The wake region is observed dynamically refining and coarsening as the vortex sheet passes. Thus, the mesh is not needlessly large during the iterations where nothing physically interesting is occurring. The range for the adaptivity criterion is subject to change depending on the simulation, which requires fine-tuning.</p><h2 style="font-weight: 400; font-style: normal;"><span style="font-size: 20px; font-weight: 600;">Validation</span></h2><p style="font-weight: 400; font-style: normal; font-size: 14px;">Lift on the cylinder was also requested from the simulation and we observe a sinusoidal oscillation of the force coefficient as the differential pressure shifts from top and bottom. The frequency of oscillation can be determined graphically or more rigorously via Fourier transform. For this simple time history, visual inspection reveals a period of 0.64 seconds or a frequency of 1.56 Hz. The Strouhal number can be computed from the equation as 0.208:</p><p><img loading="lazy" class="size-full wp-image-3932 aligncenter" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/Capture.jpg" alt="" width="234" height="81" /></p><p>For flow past a cylinder, the Strouhal number is an empirical function of the Reynolds number. The literature value of Strouhal number is found as 0.19 – with an error of 8%. Therefore, we have confidence that the simulation is in good agreement with theory. The final refined mesh is still relatively coarse for the sake of demonstration, whereas a production level mesh would likely require additional levels of adaptive mesh refinement.</p><p><img loading="lazy" style="font-size: 14px;" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/OscillatoryLiftCoeff-1024x477.png" alt="Oscillatory Lift Coeffient" width="1024" height="477" /></p><center><b><i>Oscillatory lift coefficient as the pressure build-up varies above and below the cylinder.<span style="color: #333333; font-size: 20px;"> </span></i></b></center><h2 style="font-weight: 400; font-style: normal;"><span style="font-size: 20px; font-weight: 600;">Summary</span></h2><p style="font-weight: 400; font-style: normal; font-size: 14px;">Simcenter Star-CCM+ is a CAE package that encompasses the entire workflow of CFD problems including mesh generation, solution of governing equations, and post-processing results. One of the useful features included and presently discussed is AMR. Adaptive meshing was used to minimize mesh size and thus computational time and resources. Simcenter STAR-CCM+ automatically refines the mesh based on user-defined criteria to capture regions with important flow physics. At the same time, the solution accuracy was validated by comparison to empirical results.</p><p style="font-weight: 400; font-style: normal; font-size: 14px;"> </p></div><h2 style="font-variant-ligatures: normal; font-variant-caps: normal; font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif; font-style: normal;"><img loading="lazy" class="size-full wp-image-3942 alignleft" src="https://www.m4-engineering.com/wp-content/uploads/2020/09/DanielTran-1.jpg" alt="" width="218" height="249" />Written By: Daniel Tran</h2><p style="font-variant-ligatures: normal; font-variant-caps: normal; font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif; font-size: 14px; font-style: normal; font-weight: 400;">Daniel Tran is an Engineer at M4 Engineering who is currently pursuing his master’s degree in Aerospace Engineering at California State University, Long Beach (CSULB). At the moment, his latest obsession is the optimization of earning and redeeming miles for airline rewards programs.</p>					</div>
+						</div>
+				</div>
+						</div>
+					</div>
+		</div>
+								</div>
+					</div>
+		</section>
+									</div>
+			</div>
+					</div>
+		<p>The post <a rel="nofollow" href="https://www.m4-engineering.com/simcenter-star-ccm-adaptive-mesh-refinement/">Simcenter Star-CCM+ Adaptive Mesh Refinement Case Study: Cylinder in Crossflow</a> appeared first on <a rel="nofollow" href="https://www.m4-engineering.com">M4 Engineering</a>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
